@@ -1,0 +1,67 @@
+{
+  "name": "Staqe Genesis Pool",
+  "description": "One of the primary benefits of owning a Genesis NFT is the ability to create staking pools. This means you can set up new pools where users can stake their ERC20 or ERC721 tokens to earn rewards. As a pool creator, you control various aspects like reward structures and staking terms. Owning a Genesis NFT is about more than just owning a piece of digital art; it’s about being a key player in the governance and evolution of the staking protocol, with both financial and strategic benefits. If you're looking to be actively involved in shaping the future of a blockchain project, a Genesis NFT provides a unique and powerful way to do so.",
+  "image": "ipfs://bafybeibkoohmrfcoltp63ga7c63ww5v45pupm22pavminkzgxgqq7cmd5q",
+  "external_url": "https://staqe.app",
+  "background_color": "ec4899",
+  "banner_image": "ipfs://bafybeiggmtgcvkmyw5vcen242xiuqiucjd6ymsgtnfqdojg46tbsb35wve/100.svg",
+  "attributes": [
+    {
+      "trait_type": "STK",
+      "value": "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be"
+    },
+    {
+      "trait_type": "NFT",
+      "value": "0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968"
+    },
+    {
+      "trait_type": "RWD",
+      "value": "0xeEBe00Ac0756308ac4AaBfD76c05c4F3088B8883"
+    }
+  ],
+  "tags": {
+    "staqe": {
+      "name": "Staqe Protocol",
+      "description": "Tokens used to create a pool in Staqe.App"
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be",
+      "symbol": "STK",
+      "name": "Stake Token",
+      "decimals": 18,
+      "logoURI": "ipfs://bafybeicwojjj6p722mhjxti7ncyf5e4qjujetn6ncznn36jormelh2wrre",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968",
+      "symbol": "NFT",
+      "name": "Stake NFT",
+      "decimals": 1,
+      "logoURI": "ipfs://bafybeiccpf5ptxeu44xclr5b5ccj72dizneuoubcyqgq6vh57zwqnijr2i",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xeEBe00Ac0756308ac4AaBfD76c05c4F3088B8883",
+      "symbol": "RWD",
+      "name": "Reward Token",
+      "decimals": 18,
+      "logoURI": "ipfs://bafybeib5pigv5wqtrtc2udnzppm3kp3tkjju6rcyy6j7zl6xczj5gwjv2u",
+      "tags": ["staqe"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x10C6E9530F1C1AF873a391030a1D9E8ed0630D26",
+      "symbol": "GNS",
+      "name": "Genesis NFT",
+      "decimals": 18,
+      "logoURI": "ipfs://bafybeiezmhcecbkdtc3jzfgsmful5kbnbdpz4kd4cw4cwguc3qba6vticy",
+      "tags": ["staqe"]
+    }
+  ],
+  "timestamp": "2020-06-12T00:00:00+00:00"
+}
