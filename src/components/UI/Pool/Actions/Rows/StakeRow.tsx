@@ -66,7 +66,7 @@ const Token = ({
         <div className="flex">
           {erc20 && (
             <Image
-              src={logoERC20}
+              src={logoERC20 || TOKEN_LOGO}
               alt="ERC20"
               width={0}
               height={0}
@@ -76,7 +76,7 @@ const Token = ({
           )}
           {erc721 && (
             <Image
-              src={logoERC721}
+              src={logoERC721 || TOKEN_LOGO}
               alt="ERC721"
               width={0}
               height={0}

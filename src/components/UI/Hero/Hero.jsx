@@ -25,8 +25,8 @@ const Hero = () => (
                 </h1>
               </div>
               <p className="max-w-xl mx-auto text-gray-300">
-                Fully decentralized non-custodial staking protocol for creating
-                pools, ERC20/NFT staking and claiming rewards.
+                A fully decentralized protocol for creating pools, staking
+                ERC20/NFT and earning rewards.
               </p>
               <div className="flex justify-center font-medium text-sm">
                 <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">

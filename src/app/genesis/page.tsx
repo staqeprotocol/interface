@@ -3,17 +3,17 @@
 import { Suspense, createContext } from "react";
 import { useAccount } from "wagmi";
 
-import { IPoolData } from "@/src/interfaces";
 import { ZERO_ADDRESS } from "@/src/constants";
+import { IPoolData } from "@/src/interfaces";
 
-import { useSearchParams } from "next/navigation";
 import { usePool } from "@/src/hooks/usePools";
+import { useSearchParams } from "next/navigation";
 
-import { Hero } from "@/src/components/UI/Pool/Hero";
-import { Chart } from "@/src/components/UI/Pool/Chart";
-import { Interaction } from "@/src/components/UI/Pool/Interaction";
-import { Details } from "@/src/components/UI/Pool/Details";
 import { Actions } from "@/src/components/UI/Pool/Actions";
+import { Chart } from "@/src/components/UI/Pool/Chart";
+import { Details } from "@/src/components/UI/Pool/Details";
+import { Hero } from "@/src/components/UI/Pool/Hero";
+import { Interaction } from "@/src/components/UI/Pool/Interaction";
 
 export const PoolData = createContext<IPoolData | undefined>(undefined);
 
@@ -24,12 +24,12 @@ function App() {
   const id = (get("id") || "0") as string;
   const account = (get("account") || accountAddress) as `0x${string}`;
 
-  const { pool, pools } = usePool(id, account);
+  const { pool, pools, refetch } = usePool(id, account);
 
   console.log("pool", pool);
 
   return (
-    <PoolData.Provider value={{ id, pool, pools }}>
+    <PoolData.Provider value={{ id, pool, pools, refetch }}>
       <section className="custom-screen">
         <div className="flex flex-col gap-2 w-full h-full">
           <div className="w-full h-[40rem]">

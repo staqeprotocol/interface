@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center lg:flex lg:gap-2">
-          <ul className="menu menu-horizontal px-1 z-[1]">
+          <ul className="menu menu-horizontal px-1 z-[1] flex gap-2">
             <li>
               <Link href={`/launch`}>Launch</Link>
             </li>

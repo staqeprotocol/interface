@@ -1,7 +1,8 @@
 "use client";
 
-import { GATEWAY_URL, TOQEN, ZERO_ADDRESS } from "@/src/constants";
+import { GATEWAY_URL, ZERO_ADDRESS } from "@/src/constants";
 import {
+  toqenAddress,
   useReadStaqeProtocolGetStakes,
   useWriteStaqeProtocolLaunchPool,
 } from "@/src/generated";
@@ -12,9 +13,12 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HexColorPicker } from "react-colorful";
 import { getAddress } from "viem";
-import { useAccount } from "wagmi";
+import { useAccount, useChainId } from "wagmi";
 
 const LaunchPool = () => {
+  const chainId = useChainId();
+  const { [chainId]: toqen } = toqenAddress as any;
+
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
 
   const [ipfs, setIpfs] = useState("");
@@ -778,7 +782,7 @@ const LaunchPool = () => {
       <dialog id="create-erc20" className="modal">
         <div className="modal-box">
           <Create
-            toqen={TOQEN}
+            toqen={toqen}
             standart="ERC20"
             dark
             steps={false}
@@ -794,7 +798,7 @@ const LaunchPool = () => {
       <dialog id="create-erc721" className="modal">
         <div className="modal-box">
           <Create
-            toqen={TOQEN}
+            toqen={toqen}
             standart="ERC721"
             dark
             steps={false}

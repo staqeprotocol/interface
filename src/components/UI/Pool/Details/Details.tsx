@@ -66,8 +66,10 @@ export const Details = () => {
                     <Image
                       src={
                         metadata?.logoURIs && pool?.stakeERC20?.tokenAddress
-                          ? metadata?.logoURIs[pool?.stakeERC20?.tokenAddress]
-                          : ``
+                          ? metadata?.logoURIs[
+                              pool?.stakeERC20?.tokenAddress
+                            ] ?? `/images/token.svg`
+                          : `/images/token.svg`
                       }
                       alt="Token Logo"
                       width={0}
@@ -118,8 +120,10 @@ export const Details = () => {
                     <Image
                       src={
                         metadata?.logoURIs && pool?.stakeERC721?.tokenAddress
-                          ? metadata?.logoURIs[pool?.stakeERC721?.tokenAddress]
-                          : ``
+                          ? metadata?.logoURIs[
+                              pool?.stakeERC721?.tokenAddress
+                            ] ?? `/images/token.svg`
+                          : `/images/token.svg`
                       }
                       alt="Token Logo"
                       width={0}
@@ -201,8 +205,10 @@ export const Details = () => {
                     <Image
                       src={
                         metadata?.logoURIs && pool?.rewardToken?.tokenAddress
-                          ? metadata?.logoURIs[pool?.rewardToken?.tokenAddress]
-                          : ``
+                          ? metadata?.logoURIs[
+                              pool?.rewardToken?.tokenAddress
+                            ] ?? `/images/token.svg`
+                          : `/images/token.svg`
                       }
                       alt="Token Logo"
                       width={0}

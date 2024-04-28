@@ -27,11 +27,11 @@ export const Hero = () => {
 
   const logoERC20 = useMemo(() => {
     if (!metadata || !erc20) return TOKEN_LOGO;
-    return metadata?.logoURIs?.[erc20.tokenAddress];
+    return metadata?.logoURIs?.[erc20.tokenAddress] ?? `/images/token.svg`;
   }, [metadata?.logoURIs]);
   const logoERC721 = useMemo(() => {
     if (!metadata || !erc721) return TOKEN_LOGO;
-    return metadata?.logoURIs?.[erc721.tokenAddress];
+    return metadata?.logoURIs?.[erc721.tokenAddress] ?? `/images/token.svg`;
   }, [metadata?.logoURIs]);
 
   const total = useMemo(() => {

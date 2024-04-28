@@ -49,7 +49,11 @@ export const UnstakeRow: React.FC<{
               <div className="avatar">
                 <div className="mask mask-squircle w-12 h-12">
                   <Image
-                    src={isERC20 ? logoERC20 : logoERC721}
+                    src={
+                      isERC20
+                        ? logoERC20 || TOKEN_LOGO
+                        : logoERC721 || TOKEN_LOGO
+                    }
                     alt={tokenData.symbol}
                     width={0}
                     height={0}

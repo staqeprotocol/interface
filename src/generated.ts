@@ -171,7 +171,8 @@ export const erc20Abi = [
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const erc20ToqenAbi = [
   {
@@ -465,14 +466,17 @@ export const erc20ToqenAbi = [
 ] as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const erc20ToqenAddress = {
   1337: '0xa16E02E87b7454126E5E10d957A927A7F5B5d2be',
+  534351: '0xeA0531fa7A5ccaa2089081e601c431eA61efD91A',
 } as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const erc20ToqenConfig = {
   address: erc20ToqenAddress,
@@ -711,7 +715,8 @@ export const erc721Abi = [
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const erc721ToqenAbi = [
   {
@@ -1003,14 +1008,17 @@ export const erc721ToqenAbi = [
 ] as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const erc721ToqenAddress = {
   1337: '0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968',
+  534351: '0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22',
 } as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const erc721ToqenConfig = {
   address: erc721ToqenAddress,
@@ -1022,7 +1030,8 @@ export const erc721ToqenConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const staqeProtocolAbi = [
   {
@@ -1946,14 +1955,17 @@ export const staqeProtocolAbi = [
 ] as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const staqeProtocolAddress = {
   1337: '0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82',
+  534351: '0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f',
 } as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const staqeProtocolConfig = {
   address: staqeProtocolAddress,
@@ -1965,7 +1977,8 @@ export const staqeProtocolConfig = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const toqenAbi = [
   { stateMutability: 'nonpayable', type: 'constructor', inputs: [] },
@@ -2020,14 +2033,17 @@ export const toqenAbi = [
 ] as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const toqenAddress = {
   1337: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+  534351: '0x3AE2475877243dD4331c51BABa39832450526597',
 } as const
 
 /**
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const toqenConfig = { address: toqenAddress, abi: toqenAbi } as const
 
@@ -2180,7 +2196,8 @@ export const useWatchErc20TransferEvent =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20Toqen = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2190,7 +2207,8 @@ export const useReadErc20Toqen = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"DOMAIN_SEPARATOR"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenDomainSeparator =
   /*#__PURE__*/ createUseReadContract({
@@ -2202,7 +2220,8 @@ export const useReadErc20ToqenDomainSeparator =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"allowance"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenAllowance = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2213,7 +2232,8 @@ export const useReadErc20ToqenAllowance = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"balanceOf"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2224,7 +2244,8 @@ export const useReadErc20ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"decimals"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenDecimals = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2235,7 +2256,8 @@ export const useReadErc20ToqenDecimals = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"eip712Domain"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenEip712Domain =
   /*#__PURE__*/ createUseReadContract({
@@ -2247,7 +2269,8 @@ export const useReadErc20ToqenEip712Domain =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"maxSupply"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2258,7 +2281,8 @@ export const useReadErc20ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"name"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenName = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2269,7 +2293,8 @@ export const useReadErc20ToqenName = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"nonces"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenNonces = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2280,7 +2305,8 @@ export const useReadErc20ToqenNonces = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"owner"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenOwner = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2291,7 +2317,8 @@ export const useReadErc20ToqenOwner = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"symbol"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenSymbol = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2302,7 +2329,8 @@ export const useReadErc20ToqenSymbol = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"tokenPrice"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenTokenPrice = /*#__PURE__*/ createUseReadContract({
   abi: erc20ToqenAbi,
@@ -2313,7 +2341,8 @@ export const useReadErc20ToqenTokenPrice = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"totalSupply"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useReadErc20ToqenTotalSupply = /*#__PURE__*/ createUseReadContract(
   {
@@ -2326,7 +2355,8 @@ export const useReadErc20ToqenTotalSupply = /*#__PURE__*/ createUseReadContract(
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20Toqen = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2336,7 +2366,8 @@ export const useWriteErc20Toqen = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenApprove = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2347,7 +2378,8 @@ export const useWriteErc20ToqenApprove = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"mint"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenMint = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2358,7 +2390,8 @@ export const useWriteErc20ToqenMint = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"permit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenPermit = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2369,7 +2402,8 @@ export const useWriteErc20ToqenPermit = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"transfer"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenTransfer = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2380,7 +2414,8 @@ export const useWriteErc20ToqenTransfer = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenTransferFrom =
   /*#__PURE__*/ createUseWriteContract({
@@ -2392,7 +2427,8 @@ export const useWriteErc20ToqenTransferFrom =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"withdraw"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWriteErc20ToqenWithdraw = /*#__PURE__*/ createUseWriteContract({
   abi: erc20ToqenAbi,
@@ -2403,7 +2439,8 @@ export const useWriteErc20ToqenWithdraw = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20Toqen = /*#__PURE__*/ createUseSimulateContract({
   abi: erc20ToqenAbi,
@@ -2413,7 +2450,8 @@ export const useSimulateErc20Toqen = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenApprove =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2425,7 +2463,8 @@ export const useSimulateErc20ToqenApprove =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"mint"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenMint =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2437,7 +2476,8 @@ export const useSimulateErc20ToqenMint =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"permit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenPermit =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2449,7 +2489,8 @@ export const useSimulateErc20ToqenPermit =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"transfer"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenTransfer =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2461,7 +2502,8 @@ export const useSimulateErc20ToqenTransfer =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenTransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2473,7 +2515,8 @@ export const useSimulateErc20ToqenTransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc20ToqenAbi}__ and `functionName` set to `"withdraw"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useSimulateErc20ToqenWithdraw =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2485,7 +2528,8 @@ export const useSimulateErc20ToqenWithdraw =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc20ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWatchErc20ToqenEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -2496,7 +2540,8 @@ export const useWatchErc20ToqenEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc20ToqenAbi}__ and `eventName` set to `"Approval"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWatchErc20ToqenApprovalEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -2508,7 +2553,8 @@ export const useWatchErc20ToqenApprovalEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc20ToqenAbi}__ and `eventName` set to `"EIP712DomainChanged"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWatchErc20ToqenEip712DomainChangedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -2520,7 +2566,8 @@ export const useWatchErc20ToqenEip712DomainChangedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc20ToqenAbi}__ and `eventName` set to `"Transfer"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
 export const useWatchErc20ToqenTransferEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -2721,7 +2768,8 @@ export const useWatchErc721TransferEvent =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721Toqen = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2731,7 +2779,8 @@ export const useReadErc721Toqen = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"balanceOf"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2742,7 +2791,8 @@ export const useReadErc721ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"baseURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenBaseUri = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2753,7 +2803,8 @@ export const useReadErc721ToqenBaseUri = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"getApproved"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenGetApproved =
   /*#__PURE__*/ createUseReadContract({
@@ -2765,7 +2816,8 @@ export const useReadErc721ToqenGetApproved =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"isApprovedForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenIsApprovedForAll =
   /*#__PURE__*/ createUseReadContract({
@@ -2777,7 +2829,8 @@ export const useReadErc721ToqenIsApprovedForAll =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"maxSupply"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2788,7 +2841,8 @@ export const useReadErc721ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"name"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenName = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2799,7 +2853,8 @@ export const useReadErc721ToqenName = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"owner"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenOwner = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2810,7 +2865,8 @@ export const useReadErc721ToqenOwner = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"ownerOf"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenOwnerOf = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2821,7 +2877,8 @@ export const useReadErc721ToqenOwnerOf = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"supportsInterface"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenSupportsInterface =
   /*#__PURE__*/ createUseReadContract({
@@ -2833,7 +2890,8 @@ export const useReadErc721ToqenSupportsInterface =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"symbol"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenSymbol = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2844,7 +2902,8 @@ export const useReadErc721ToqenSymbol = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"tokenPrice"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenTokenPrice = /*#__PURE__*/ createUseReadContract(
   {
@@ -2857,7 +2916,8 @@ export const useReadErc721ToqenTokenPrice = /*#__PURE__*/ createUseReadContract(
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"tokenURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenTokenUri = /*#__PURE__*/ createUseReadContract({
   abi: erc721ToqenAbi,
@@ -2868,7 +2928,8 @@ export const useReadErc721ToqenTokenUri = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"totalSupply"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useReadErc721ToqenTotalSupply =
   /*#__PURE__*/ createUseReadContract({
@@ -2880,7 +2941,8 @@ export const useReadErc721ToqenTotalSupply =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721Toqen = /*#__PURE__*/ createUseWriteContract({
   abi: erc721ToqenAbi,
@@ -2890,7 +2952,8 @@ export const useWriteErc721Toqen = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenApprove = /*#__PURE__*/ createUseWriteContract({
   abi: erc721ToqenAbi,
@@ -2901,7 +2964,8 @@ export const useWriteErc721ToqenApprove = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"mint"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenMint = /*#__PURE__*/ createUseWriteContract({
   abi: erc721ToqenAbi,
@@ -2912,7 +2976,8 @@ export const useWriteErc721ToqenMint = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"safeTransferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenSafeTransferFrom =
   /*#__PURE__*/ createUseWriteContract({
@@ -2924,7 +2989,8 @@ export const useWriteErc721ToqenSafeTransferFrom =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"setApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenSetApprovalForAll =
   /*#__PURE__*/ createUseWriteContract({
@@ -2936,7 +3002,8 @@ export const useWriteErc721ToqenSetApprovalForAll =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenTransferFrom =
   /*#__PURE__*/ createUseWriteContract({
@@ -2948,7 +3015,8 @@ export const useWriteErc721ToqenTransferFrom =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"withdraw"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWriteErc721ToqenWithdraw = /*#__PURE__*/ createUseWriteContract(
   {
@@ -2961,7 +3029,8 @@ export const useWriteErc721ToqenWithdraw = /*#__PURE__*/ createUseWriteContract(
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721Toqen = /*#__PURE__*/ createUseSimulateContract({
   abi: erc721ToqenAbi,
@@ -2971,7 +3040,8 @@ export const useSimulateErc721Toqen = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenApprove =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2983,7 +3053,8 @@ export const useSimulateErc721ToqenApprove =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"mint"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenMint =
   /*#__PURE__*/ createUseSimulateContract({
@@ -2995,7 +3066,8 @@ export const useSimulateErc721ToqenMint =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"safeTransferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenSafeTransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3007,7 +3079,8 @@ export const useSimulateErc721ToqenSafeTransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"setApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenSetApprovalForAll =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3019,7 +3092,8 @@ export const useSimulateErc721ToqenSetApprovalForAll =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenTransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3031,7 +3105,8 @@ export const useSimulateErc721ToqenTransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link erc721ToqenAbi}__ and `functionName` set to `"withdraw"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useSimulateErc721ToqenWithdraw =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3043,7 +3118,8 @@ export const useSimulateErc721ToqenWithdraw =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc721ToqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWatchErc721ToqenEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3054,7 +3130,8 @@ export const useWatchErc721ToqenEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc721ToqenAbi}__ and `eventName` set to `"Approval"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWatchErc721ToqenApprovalEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3066,7 +3143,8 @@ export const useWatchErc721ToqenApprovalEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc721ToqenAbi}__ and `eventName` set to `"ApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWatchErc721ToqenApprovalForAllEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3078,7 +3156,8 @@ export const useWatchErc721ToqenApprovalForAllEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link erc721ToqenAbi}__ and `eventName` set to `"Transfer"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
 export const useWatchErc721ToqenTransferEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3090,7 +3169,8 @@ export const useWatchErc721ToqenTransferEvent =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocol = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3100,7 +3180,8 @@ export const useReadStaqeProtocol = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"balanceOf"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolBalanceOf =
   /*#__PURE__*/ createUseReadContract({
@@ -3112,7 +3193,8 @@ export const useReadStaqeProtocolBalanceOf =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"calculateReward"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolCalculateReward =
   /*#__PURE__*/ createUseReadContract({
@@ -3124,7 +3206,8 @@ export const useReadStaqeProtocolCalculateReward =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"contractURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolContractUri =
   /*#__PURE__*/ createUseReadContract({
@@ -3136,7 +3219,8 @@ export const useReadStaqeProtocolContractUri =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getApproved"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetApproved =
   /*#__PURE__*/ createUseReadContract({
@@ -3148,7 +3232,8 @@ export const useReadStaqeProtocolGetApproved =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getClaimedAmount"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetClaimedAmount =
   /*#__PURE__*/ createUseReadContract({
@@ -3160,7 +3245,8 @@ export const useReadStaqeProtocolGetClaimedAmount =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getPool"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetPool = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3171,7 +3257,8 @@ export const useReadStaqeProtocolGetPool = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getReward"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetReward =
   /*#__PURE__*/ createUseReadContract({
@@ -3183,7 +3270,8 @@ export const useReadStaqeProtocolGetReward =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getRewards"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetRewards =
   /*#__PURE__*/ createUseReadContract({
@@ -3195,7 +3283,8 @@ export const useReadStaqeProtocolGetRewards =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getStake"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetStake = /*#__PURE__*/ createUseReadContract(
   {
@@ -3208,7 +3297,8 @@ export const useReadStaqeProtocolGetStake = /*#__PURE__*/ createUseReadContract(
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getStakes"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetStakes =
   /*#__PURE__*/ createUseReadContract({
@@ -3220,7 +3310,8 @@ export const useReadStaqeProtocolGetStakes =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"getTotalPools"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolGetTotalPools =
   /*#__PURE__*/ createUseReadContract({
@@ -3232,7 +3323,8 @@ export const useReadStaqeProtocolGetTotalPools =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"isApprovedForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolIsApprovedForAll =
   /*#__PURE__*/ createUseReadContract({
@@ -3244,7 +3336,8 @@ export const useReadStaqeProtocolIsApprovedForAll =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"name"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolName = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3255,7 +3348,8 @@ export const useReadStaqeProtocolName = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"owner"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolOwner = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3266,7 +3360,8 @@ export const useReadStaqeProtocolOwner = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"ownerOf"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolOwnerOf = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3277,7 +3372,8 @@ export const useReadStaqeProtocolOwnerOf = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"supportsInterface"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolSupportsInterface =
   /*#__PURE__*/ createUseReadContract({
@@ -3289,7 +3385,8 @@ export const useReadStaqeProtocolSupportsInterface =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"symbol"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolSymbol = /*#__PURE__*/ createUseReadContract({
   abi: staqeProtocolAbi,
@@ -3300,7 +3397,8 @@ export const useReadStaqeProtocolSymbol = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"tokenInfo"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolTokenInfo =
   /*#__PURE__*/ createUseReadContract({
@@ -3312,7 +3410,8 @@ export const useReadStaqeProtocolTokenInfo =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"tokenURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useReadStaqeProtocolTokenUri = /*#__PURE__*/ createUseReadContract(
   {
@@ -3325,7 +3424,8 @@ export const useReadStaqeProtocolTokenUri = /*#__PURE__*/ createUseReadContract(
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocol = /*#__PURE__*/ createUseWriteContract({
   abi: staqeProtocolAbi,
@@ -3335,7 +3435,8 @@ export const useWriteStaqeProtocol = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"addReward"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolAddReward =
   /*#__PURE__*/ createUseWriteContract({
@@ -3347,7 +3448,8 @@ export const useWriteStaqeProtocolAddReward =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"addRewardWithPermit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolAddRewardWithPermit =
   /*#__PURE__*/ createUseWriteContract({
@@ -3359,7 +3461,8 @@ export const useWriteStaqeProtocolAddRewardWithPermit =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolApprove =
   /*#__PURE__*/ createUseWriteContract({
@@ -3371,7 +3474,8 @@ export const useWriteStaqeProtocolApprove =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"claimRewards"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolClaimRewards =
   /*#__PURE__*/ createUseWriteContract({
@@ -3383,7 +3487,8 @@ export const useWriteStaqeProtocolClaimRewards =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"editPool"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolEditPool =
   /*#__PURE__*/ createUseWriteContract({
@@ -3395,7 +3500,8 @@ export const useWriteStaqeProtocolEditPool =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"launchPool"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolLaunchPool =
   /*#__PURE__*/ createUseWriteContract({
@@ -3407,7 +3513,8 @@ export const useWriteStaqeProtocolLaunchPool =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"renounceOwnership"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolRenounceOwnership =
   /*#__PURE__*/ createUseWriteContract({
@@ -3419,7 +3526,8 @@ export const useWriteStaqeProtocolRenounceOwnership =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"safeTransferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolSafeTransferFrom =
   /*#__PURE__*/ createUseWriteContract({
@@ -3431,7 +3539,8 @@ export const useWriteStaqeProtocolSafeTransferFrom =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"setApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolSetApprovalForAll =
   /*#__PURE__*/ createUseWriteContract({
@@ -3443,7 +3552,8 @@ export const useWriteStaqeProtocolSetApprovalForAll =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"setContractURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolSetContractUri =
   /*#__PURE__*/ createUseWriteContract({
@@ -3455,7 +3565,8 @@ export const useWriteStaqeProtocolSetContractUri =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"stake"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolStake = /*#__PURE__*/ createUseWriteContract({
   abi: staqeProtocolAbi,
@@ -3466,7 +3577,8 @@ export const useWriteStaqeProtocolStake = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"stakeWithPermit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolStakeWithPermit =
   /*#__PURE__*/ createUseWriteContract({
@@ -3478,7 +3590,8 @@ export const useWriteStaqeProtocolStakeWithPermit =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolTransferFrom =
   /*#__PURE__*/ createUseWriteContract({
@@ -3490,7 +3603,8 @@ export const useWriteStaqeProtocolTransferFrom =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"transferOwnership"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolTransferOwnership =
   /*#__PURE__*/ createUseWriteContract({
@@ -3502,7 +3616,8 @@ export const useWriteStaqeProtocolTransferOwnership =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"unstake"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWriteStaqeProtocolUnstake =
   /*#__PURE__*/ createUseWriteContract({
@@ -3514,7 +3629,8 @@ export const useWriteStaqeProtocolUnstake =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocol = /*#__PURE__*/ createUseSimulateContract(
   { abi: staqeProtocolAbi, address: staqeProtocolAddress },
@@ -3523,7 +3639,8 @@ export const useSimulateStaqeProtocol = /*#__PURE__*/ createUseSimulateContract(
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"addReward"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolAddReward =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3535,7 +3652,8 @@ export const useSimulateStaqeProtocolAddReward =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"addRewardWithPermit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolAddRewardWithPermit =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3547,7 +3665,8 @@ export const useSimulateStaqeProtocolAddRewardWithPermit =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"approve"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolApprove =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3559,7 +3678,8 @@ export const useSimulateStaqeProtocolApprove =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"claimRewards"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolClaimRewards =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3571,7 +3691,8 @@ export const useSimulateStaqeProtocolClaimRewards =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"editPool"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolEditPool =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3583,7 +3704,8 @@ export const useSimulateStaqeProtocolEditPool =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"launchPool"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolLaunchPool =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3595,7 +3717,8 @@ export const useSimulateStaqeProtocolLaunchPool =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"renounceOwnership"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolRenounceOwnership =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3607,7 +3730,8 @@ export const useSimulateStaqeProtocolRenounceOwnership =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"safeTransferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolSafeTransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3619,7 +3743,8 @@ export const useSimulateStaqeProtocolSafeTransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"setApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolSetApprovalForAll =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3631,7 +3756,8 @@ export const useSimulateStaqeProtocolSetApprovalForAll =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"setContractURI"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolSetContractUri =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3643,7 +3769,8 @@ export const useSimulateStaqeProtocolSetContractUri =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"stake"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolStake =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3655,7 +3782,8 @@ export const useSimulateStaqeProtocolStake =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"stakeWithPermit"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolStakeWithPermit =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3667,7 +3795,8 @@ export const useSimulateStaqeProtocolStakeWithPermit =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"transferFrom"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolTransferFrom =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3679,7 +3808,8 @@ export const useSimulateStaqeProtocolTransferFrom =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"transferOwnership"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolTransferOwnership =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3691,7 +3821,8 @@ export const useSimulateStaqeProtocolTransferOwnership =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link staqeProtocolAbi}__ and `functionName` set to `"unstake"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useSimulateStaqeProtocolUnstake =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3703,7 +3834,8 @@ export const useSimulateStaqeProtocolUnstake =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3714,7 +3846,8 @@ export const useWatchStaqeProtocolEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Approval"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolApprovalEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3726,7 +3859,8 @@ export const useWatchStaqeProtocolApprovalEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"ApprovalForAll"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolApprovalForAllEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3738,7 +3872,8 @@ export const useWatchStaqeProtocolApprovalForAllEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"BatchMetadataUpdate"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolBatchMetadataUpdateEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3750,7 +3885,8 @@ export const useWatchStaqeProtocolBatchMetadataUpdateEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Claimed"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolClaimedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3762,7 +3898,8 @@ export const useWatchStaqeProtocolClaimedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"ContractURIUpdated"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolContractUriUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3774,7 +3911,8 @@ export const useWatchStaqeProtocolContractUriUpdatedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Launched"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolLaunchedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3786,7 +3924,8 @@ export const useWatchStaqeProtocolLaunchedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"MetadataUpdate"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolMetadataUpdateEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3798,7 +3937,8 @@ export const useWatchStaqeProtocolMetadataUpdateEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"OwnershipTransferred"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolOwnershipTransferredEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3810,7 +3950,8 @@ export const useWatchStaqeProtocolOwnershipTransferredEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Rewarded"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolRewardedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3822,7 +3963,8 @@ export const useWatchStaqeProtocolRewardedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Staked"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolStakedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3834,7 +3976,8 @@ export const useWatchStaqeProtocolStakedEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Transfer"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolTransferEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3846,7 +3989,8 @@ export const useWatchStaqeProtocolTransferEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link staqeProtocolAbi}__ and `eventName` set to `"Unstaked"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
 export const useWatchStaqeProtocolUnstakedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -3858,7 +4002,8 @@ export const useWatchStaqeProtocolUnstakedEvent =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link toqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useWriteToqen = /*#__PURE__*/ createUseWriteContract({
   abi: toqenAbi,
@@ -3868,7 +4013,8 @@ export const useWriteToqen = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link toqenAbi}__ and `functionName` set to `"createERC20"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useWriteToqenCreateErc20 = /*#__PURE__*/ createUseWriteContract({
   abi: toqenAbi,
@@ -3879,7 +4025,8 @@ export const useWriteToqenCreateErc20 = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link toqenAbi}__ and `functionName` set to `"createERC721"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useWriteToqenCreateErc721 = /*#__PURE__*/ createUseWriteContract({
   abi: toqenAbi,
@@ -3890,7 +4037,8 @@ export const useWriteToqenCreateErc721 = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link toqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useSimulateToqen = /*#__PURE__*/ createUseSimulateContract({
   abi: toqenAbi,
@@ -3900,7 +4048,8 @@ export const useSimulateToqen = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link toqenAbi}__ and `functionName` set to `"createERC20"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useSimulateToqenCreateErc20 =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3912,7 +4061,8 @@ export const useSimulateToqenCreateErc20 =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link toqenAbi}__ and `functionName` set to `"createERC721"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useSimulateToqenCreateErc721 =
   /*#__PURE__*/ createUseSimulateContract({
@@ -3924,7 +4074,8 @@ export const useSimulateToqenCreateErc721 =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link toqenAbi}__
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useWatchToqenEvent = /*#__PURE__*/ createUseWatchContractEvent({
   abi: toqenAbi,
@@ -3934,7 +4085,8 @@ export const useWatchToqenEvent = /*#__PURE__*/ createUseWatchContractEvent({
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link toqenAbi}__ and `eventName` set to `"TokenCreated"`
  *
- *
+ * -
+ * - [__View Contract on Scroll Sepolia Blockscout__](https://sepolia-blockscout.scroll.io/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
 export const useWatchToqenTokenCreatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
