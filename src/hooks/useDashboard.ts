@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
-import { IMetadataMap, IPoolExtendedDetails, IRewardsMap, IStakesMap } from "@/src/interfaces";
-import { useReadStaqeProtocolGetTotalPools } from "@/src/generated";
 import { ZERO_ADDRESS } from '@/src/constants';
+import { useReadStaqeProtocolGetTotalPools } from "@/src/generated";
 import { usePools } from '@/src/hooks/usePools';
-import { useStakes } from '@/src/hooks/useStakes';
 import { useRewards } from '@/src/hooks/useRewards';
+import { useStakes } from '@/src/hooks/useStakes';
+import { IMetadataMap, IPoolExtendedDetails, IRewardsMap, IStakesMap } from "@/src/interfaces";
+import { useEffect, useState } from 'react';
 import { useMetadata } from './useMetadata';
 
 interface IDashboard {
@@ -32,7 +32,7 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
   const [totalPoolsProcessed, setTotalPoolsProcessed] = useState(0n);
 
   const [page, setPage] = useState(1);
-  const { pools: getPools } = usePools(page, 1, user);
+  const { pools: getPools } = usePools(page, 100, user);
 
   const [stakedPools, setStakedPools] = useState<IPoolExtendedDetails[]>([]);
   const [launchedPools, setLaunchedPools] = useState<IPoolExtendedDetails[]>([]);
