@@ -280,7 +280,7 @@ const LaunchPool = () => {
 
       if (stakeErc20 && infoErc20 && stakeURI) {
         tokens.push({
-          chainId: 1,
+          chainId: chainId,
           address: stakeErc20,
           symbol: infoErc20?.symbol,
           name: infoErc20?.name,
@@ -292,7 +292,7 @@ const LaunchPool = () => {
 
       if (stakeErc721 && infoErc721 && nftURI) {
         tokens.push({
-          chainId: 1,
+          chainId: chainId,
           address: stakeErc721,
           symbol: infoErc721?.symbol,
           name: infoErc721?.name,
@@ -304,7 +304,7 @@ const LaunchPool = () => {
 
       if (rewardErc20 && infoReward && rewardURI) {
         tokens.push({
-          chainId: 1,
+          chainId: chainId,
           address: rewardErc20,
           symbol: infoReward?.symbol,
           name: infoReward?.name,
