@@ -9,8 +9,7 @@ import { useDashboard } from "@/src/hooks/useDashboard";
 import { useTimestamps } from "@/src/hooks/useTimestamps";
 import { IToken } from "@/src/interfaces";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   PiCoinsDuotone,
   PiHandCoinsDuotone,
@@ -58,8 +57,13 @@ const LaunchFirstPool = () => (
 
 function User() {
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
-  const { get } = useSearchParams();
-  const account = (get("account") || accountAddress) as `0x${string}`;
+
+  const [account, setAccount] = useState<`0x${string}`>(accountAddress);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    setAccount((queryParams.get("account") || accountAddress) as `0x${string}`);
+  }, []);
 
   const { completed, pools, staked, launched } = useDashboard(account);
 

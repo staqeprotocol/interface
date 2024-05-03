@@ -1,10 +1,10 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useAccount, useSwitchChain } from "wagmi";
 
 import GradientWrapper from "@/src/components/GradientWrapper";
+import Bittorrent from "@/src/components/Icons/Bittorrent";
 import Scroll from "@/src/components/Icons/Scroll";
 import Card from "@/src/components/UI/Pools/Card";
 import { ZERO_ADDRESS } from "@/src/constants";
@@ -15,7 +15,18 @@ import { GiFoundryBucket } from "react-icons/gi";
 
 const App = () => {
   const account = useAccount();
-  const { chains, switchChain } = useSwitchChain();
+  const { chains, switchChain }: any = useSwitchChain();
+
+  const [page, setPage] = useState(1);
+  const [size, setSize] = useState(2);
+  const [user, setUser] = useState<`0x${string}`>(ZERO_ADDRESS);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    setPage(Number(queryParams.get("page") || 1));
+    setSize(Number(queryParams.get("size") || 100));
+    setUser((queryParams.get("user") || ZERO_ADDRESS) as `0x${string}`);
+  }, []);
 
   const getIcon = (chainId: number) => {
     switch (chainId) {
@@ -31,15 +42,18 @@ const App = () => {
             <Scroll />
           </div>
         );
+      case 1029:
+        return (
+          <div className="w-30">
+            <Bittorrent />
+          </div>
+        );
+      case 97:
+        return <BinanceSmartChain size={30} />;
       default:
         return <GiFoundryBucket size={30} className="text-white" />;
     }
   };
-
-  const { get } = useSearchParams();
-  const page = Number(get("page") || "1") as number;
-  const size = Number(get("size") || "2") as number;
-  const user = (get("user") || ZERO_ADDRESS) as `0x${string}`;
 
   const { pools, hasPrev, hasNext } = usePools(page, size, user);
 
@@ -47,7 +61,7 @@ const App = () => {
     <section className="custom-screen">
       <GradientWrapper wrapperclassname="max-w-3xl h-[250px] top-12 inset-0 sm:h-[300px] lg:h-[650px]">
         <div role="tablist" className="tabs tabs-boxed opacity-80">
-          {chains.map((chain) => {
+          {chains.map((chain: any) => {
             const isActive =
               account.isConnected && account.chainId === chain.id;
             return (

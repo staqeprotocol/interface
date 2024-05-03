@@ -8,6 +8,8 @@ import {
 } from "@/src/generated";
 import { useErc20, useErc721 } from "@/src/hooks/useErc";
 import { Create } from "@toqen/react";
+import { base32 } from "multiformats/bases/base32";
+import { CID } from "multiformats/cid";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
@@ -205,7 +207,7 @@ const LaunchPool = () => {
         {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_PINATA_JWT}`,
+            Authorization: `Bearer ${ipfs}`,
           },
           body: formData,
         }
@@ -214,7 +216,9 @@ const LaunchPool = () => {
 
       console.log("uploadImage", resData);
 
-      return resData && resData.IpfsHash ? "ipfs://" + resData.IpfsHash : "";
+      return resData && resData.IpfsHash
+        ? "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32)
+        : "";
     } catch (error) {
       console.log("uploadImage", error);
       return "";
@@ -347,7 +351,7 @@ const LaunchPool = () => {
         {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_PINATA_JWT}`,
+            Authorization: `Bearer ${ipfs}`,
           },
           body: formData,
         }
@@ -356,16 +360,25 @@ const LaunchPool = () => {
 
       if (resData && resData.IpfsHash) {
         // metadata = `0x${Buffer.from(bs58.decode(resData.IpfsHash)).toString("hex").slice(4)}`;
-        metadata = "ipfs://" + resData.IpfsHash;
+        metadata =
+          "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32);
       }
 
-      console.log(`Get Metadata: ${GATEWAY_URL}${resData.IpfsHash}`);
+      console.log(
+        `Get Metadata: ${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}`
+      );
 
       setLoading("Get Metadata ...");
-      const getMetadata = await fetch(`${GATEWAY_URL}${resData.IpfsHash}`);
+      const getMetadata = await fetch(
+        `https://${CID.parse(resData.IpfsHash).toV1().toString(base32)}.ipfs.dweb.link`
+      );
       const jsonMetadata = await getMetadata.json();
 
-      console.log("Metadata", resData.IpfsHash, jsonMetadata);
+      console.log(
+        "Metadata",
+        CID.parse(resData.IpfsHash).toV1().toString(base32),
+        jsonMetadata
+      );
 
       if (metadata && jsonMetadata && jsonMetadata.name === name) {
         setLoading("Send To Blockchain");
