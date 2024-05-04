@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useAccount } from "wagmi";
+import { useAccount, useConnect } from "wagmi";
 
 import GradientWrapper from "@/src/components/GradientWrapper";
 import { ZERO_ADDRESS } from "@/src/constants";
@@ -13,6 +13,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   PiCoinsDuotone,
   PiHandCoinsDuotone,
+  PiPlanetLight,
   PiStackDuotone,
   PiVaultDuotone,
 } from "react-icons/pi";
@@ -30,7 +31,7 @@ const amnt = (
 };
 
 const AddFirstStake = () => (
-  <div className="timeline-start md:text-end mb-10 w-full">
+  <div className="timeline-start md:text-end w-full">
     <a
       href="/pools?size=4"
       className="link text-xl underline underline-offset-8 decoration-dotted text-gray-500 hover:text-white"
@@ -43,7 +44,7 @@ const AddFirstStake = () => (
 );
 
 const LaunchFirstPool = () => (
-  <div className="timeline-end md:text-end mb-10 w-full">
+  <div className="timeline-end md:text-end w-full">
     <a
       href="/launch"
       className="link text-xl underline underline-offset-8 decoration-dotted text-gray-500 hover:text-white"
@@ -55,8 +56,9 @@ const LaunchFirstPool = () => (
   </div>
 );
 
-function User() {
+function Dashboard() {
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
+  const { connectors, connect } = useConnect();
 
   const [account, setAccount] = useState<`0x${string}`>(accountAddress);
 
@@ -68,21 +70,21 @@ function User() {
     setAccount((queryParams.get("account") || accountAddress) as `0x${string}`);
   }, [accountAddress]);
 
-  const { completed, pools, staked, launched } = useDashboard(account);
+  const { completed, pools, staked, launched } = useDashboard(account) ?? {};
 
   const stakedTs = useMemo(() => {
     return {
-      pools: staked.pools,
-      rewards: Object.values(staked.rewards ?? {}).flat(),
-      stakes: Object.values(staked.stakes ?? {}).flat(),
+      pools: staked?.pools,
+      rewards: Object.values(staked?.rewards ?? {}).flat(),
+      stakes: Object.values(staked?.stakes ?? {}).flat(),
     };
   }, [staked]);
 
   const launchedTs = useMemo(() => {
     return {
-      pools: launched.pools,
-      rewards: Object.values(launched.rewards ?? {}).flat(),
-      stakes: Object.values(launched.stakes ?? {}).flat(),
+      pools: launched?.pools,
+      rewards: Object.values(launched?.rewards ?? {}).flat(),
+      stakes: Object.values(launched?.stakes ?? {}).flat(),
     };
   }, [launched]);
 
@@ -90,6 +92,8 @@ function User() {
   const launchedDate = useTimestamps(launchedTs);
 
   const accountStakes = useMemo(() => {
+    if (!staked) return;
+
     const stakes: ITokenMap = {};
 
     staked.pools &&
@@ -130,6 +134,8 @@ function User() {
   }, [staked]);
 
   const accountRewards = useMemo(() => {
+    if (!staked) return;
+
     const rewards: ITokenMap = {};
 
     staked.pools &&
@@ -155,6 +161,8 @@ function User() {
   }, [staked]);
 
   const accountAddedRewards = useMemo(() => {
+    if (!launched) return;
+
     const pools: ITokenMap = {};
 
     launched.pools &&
@@ -263,13 +271,50 @@ function User() {
 
   if (account === ZERO_ADDRESS) {
     return (
-      <section className="custom-screen text-center m-10">Loading ...</section>
+      <section className="text-center">
+        <GradientWrapper wrapperclassname="max-w-3xl h-[250px] top-12 inset-0 sm:h-[300px] lg:h-[650px]">
+          <div className="mt-20 flex flex-col gap-4 justify-center items-center">
+            <div className="text-6xl animate-spin">
+              <PiPlanetLight />
+            </div>
+            <div className="text-sm">Connect to show the dashboard.</div>
+            <button
+              onClick={() => connect({ connector: connectors[0] })}
+              className="btn btn-ghost"
+            >
+              Connect
+            </button>
+          </div>
+        </GradientWrapper>
+      </section>
     );
   }
 
   return (
     <section className="custom-screen">
       <GradientWrapper wrapperclassname="max-w-3xl h-[250px] top-12 inset-0 sm:h-[300px] lg:h-[650px]">
+        {!completed && pools && pools.total > 0n && (
+          <div className="absolute inset-0 w-full h-full z-20">
+            <div className="relative w-full h-full">
+              <div className="absolute inset-0 w-full h-full opacity-80 bg-black/80 rounded-xl"></div>
+              <div className="grid place-items-center h-full">
+                <div
+                  className="radial-progress text-white"
+                  style={
+                    {
+                      "--value": (
+                        (pools.processed * 100n) /
+                        pools.total
+                      ).toString(),
+                    } as any
+                  }
+                >
+                  {((pools.processed * 100n) / pools.total).toString()}%
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="w-full">
           <div className="bg-slate-200/10 h-24 w-24 mask mask-hexagon-2 mx-auto">
             <Image
@@ -293,28 +338,6 @@ function User() {
             {account}
           </h1>
         </div>
-        {!completed && pools.total > 0n && (
-          <div className="absolute inset-0 w-full h-full z-20">
-            <div className="relative w-full h-full">
-              <div className="absolute inset-0 w-full h-full opacity-80 bg-black"></div>
-              <div className="w-full h-20 py-20 mx-auto text-center">
-                <div
-                  className="radial-progress text-white"
-                  style={
-                    {
-                      "--value": (
-                        (pools.processed * 100n) /
-                        pools.total
-                      ).toString(),
-                    } as any
-                  }
-                >
-                  {((pools.processed * 100n) / pools.total).toString()}%
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
         <div className="grid grid-cols-2 grid-rows-1 grid-flow-row gap-2 mt-2">
           <div>
             <div className="grid grid-cols-2 grid-rows-1 grid-flow-row gap-2">
@@ -588,4 +611,4 @@ function User() {
   );
 }
 
-export default User;
+export default Dashboard;

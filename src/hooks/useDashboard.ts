@@ -1,4 +1,3 @@
-import { ZERO_ADDRESS } from "@/src/constants";
 import { useReadStaqeProtocolGetTotalPools } from "@/src/generated";
 import { usePools } from "@/src/hooks/usePools";
 import { useRewards } from "@/src/hooks/useRewards";
@@ -9,7 +8,7 @@ import {
   IRewardsMap,
   IStakesMap,
 } from "@/src/interfaces";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useMetadata } from "./useMetadata";
 
 interface IDashboard {
@@ -32,19 +31,29 @@ interface IDashboard {
   };
 }
 
-export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
+export function useDashboard(account: `0x${string}`): IDashboard | undefined {
   const { data: totalPools = 0n } = useReadStaqeProtocolGetTotalPools();
   const [totalPoolsProcessed, setTotalPoolsProcessed] = useState(0n);
 
+  const perPage = 1;
+
   const [page, setPage] = useState(1);
-  const { pools: getPools } = usePools(page, 10, user);
+  const total = useMemo(() => totalPools / BigInt(perPage), [totalPools]);
+  const { pools: getPools } = usePools(page, perPage, account);
+  const pools = useMemo(
+    () =>
+      JSON.stringify(getPools, (_, v) =>
+        typeof v === "bigint" ? v.toString() : v
+      ),
+    [getPools]
+  );
 
   const [stakedPools, setStakedPools] = useState<IPoolExtendedDetails[]>([]);
   const [launchedPools, setLaunchedPools] = useState<IPoolExtendedDetails[]>(
     []
   );
 
-  const [completed, setCompleted] = useState<boolean | undefined>();
+  const [completed, setCompleted] = useState<boolean>();
 
   const stakedStakes = useStakes(completed ? stakedPools : []);
   const stakedRewards = useRewards(completed ? stakedPools : []);
@@ -55,14 +64,30 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
   const launchedMetadata = useMetadata(completed ? launchedPools : []);
 
   useEffect(() => {
-    if (totalPoolsProcessed <= 0n) {
-      setLaunchedPools([]);
-    }
+    setStakedPools([]);
+    setLaunchedPools([]);
+  }, []);
 
-    if (!getPools?.length || totalPools <= 0n || completed) return;
+  useEffect(() => {
+    if (page >= total) return;
+    console.log("Page:", page, "/", total);
+    const timer = setTimeout(() => setPage((page) => page + 1), 1000);
+    return () => clearTimeout(timer);
+  }, [page, total]);
+
+  useEffect(() => {
+    if (totalPools > 0n && totalPoolsProcessed < totalPools) {
+      setCompleted(false);
+    } else {
+      setCompleted(true);
+    }
+  }, [totalPools, totalPoolsProcessed]);
+
+  useEffect(() => {
+    if (!getPools) return;
 
     getPools.forEach((pool) => {
-      if (pool.owner === user) {
+      if (pool.owner === account) {
         setLaunchedPools((prev) => [...(prev ?? []), pool]);
       }
       if (pool.totalStakerStakes > 0n) {
@@ -71,18 +96,7 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
     });
 
     setTotalPoolsProcessed((prev) => prev + BigInt(getPools.length));
-  }, [completed, getPools, totalPools, totalPoolsProcessed, user]);
-
-  useEffect(() => {
-    if (totalPools <= 0n) return;
-    if (totalPoolsProcessed < totalPools) {
-      if (completed === undefined) setCompleted(false);
-      const timer = setTimeout(() => setPage(page + 1), 100);
-      return () => clearTimeout(timer);
-    } else {
-      setCompleted(true);
-    }
-  }, [completed, page, totalPools, totalPoolsProcessed]);
+  }, [pools, account]);
 
   return {
     completed,
