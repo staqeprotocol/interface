@@ -776,10 +776,7 @@ const LaunchPool = () => {
                 type="text"
                 placeholder="Type here pinata JWT"
                 className="input input-bordered w-full"
-                value={
-                  ipfs ||
-                  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJkOTExNTk3MC00ZGYwLTRiYTctODE4Yi00MzYzZGMxMGVmZjEiLCJlbWFpbCI6InRldHlhbmFpbGluYUBwcm90b24ubWUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiMzNlM2MxMDcxMWIxNmZjOGU3ZTUiLCJzY29wZWRLZXlTZWNyZXQiOiI4ZGEwZGVmNmYzZmUxNmE3NzBlNDM3NDRjMDNmYmU5MGRhMWZjNTdmMDcyN2Q0M2I1ZTZhODBjYmRkMzQ3YjU3IiwiaWF0IjoxNzE0Njk0NDg3fQ.5OPt9Lt51cQnmSrqOIIE5YSl1XPEA44v1cXhyzSEg18"
-                }
+                value={ipfs}
                 onChange={(event) => {
                   setIpfs(event.currentTarget.value);
                 }}
