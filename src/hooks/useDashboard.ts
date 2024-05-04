@@ -71,7 +71,7 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
     });
 
     setTotalPoolsProcessed((prev) => prev + BigInt(getPools.length));
-  }, [getPools]);
+  }, [completed, getPools, totalPools, totalPoolsProcessed, user]);
 
   useEffect(() => {
     if (totalPools <= 0n) return;
@@ -82,7 +82,7 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
     } else {
       setCompleted(true);
     }
-  }, [totalPoolsProcessed]);
+  }, [completed, page, totalPools, totalPoolsProcessed]);
 
   return {
     completed,

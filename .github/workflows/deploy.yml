@@ -18,11 +18,16 @@ jobs:
         with:
           node-version: "20"
 
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
+        with:
+          version: 8
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

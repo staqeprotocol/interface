@@ -42,7 +42,7 @@ export function usePool(id: string, account: `0x${string}`): IPoolResult {
 
   const pools = useMemo<IPools>(
     () => (dataPool ? [{ id, account, ...dataPool }] : undefined),
-    [dataPool]
+    [id, account, dataPool]
   );
 
   return { pool: pools?.[0], pools, refetch };
@@ -82,7 +82,7 @@ export function usePools(
         args: [account, BigInt(id)],
       },
     ]);
-  }, [total, page, size, account]);
+  }, [total, page, size, account, address]);
 
   const { data: dataPools } = useReadContracts({ contracts });
 
@@ -98,7 +98,7 @@ export function usePools(
 
       return acc;
     }, []);
-  }, [dataPools, contracts]);
+  }, [dataPools, contracts, account]);
 
   return { pools, hasPrev, hasNext };
 }
