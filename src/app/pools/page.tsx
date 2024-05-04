@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAccount, useSwitchChain } from "wagmi";
 
 import GradientWrapper from "@/src/components/GradientWrapper";
@@ -13,7 +13,7 @@ import { BinanceSmartChain, Ethereum, Polygon } from "cryptocons";
 import Link from "next/link";
 import { GiFoundryBucket } from "react-icons/gi";
 
-const App = () => {
+const PoolsPage = () => {
   const account = useAccount();
   const { chains, switchChain }: any = useSwitchChain();
 
@@ -22,7 +22,10 @@ const App = () => {
   const [user, setUser] = useState<`0x${string}`>(ZERO_ADDRESS);
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
+    const queryParams =
+      typeof window !== "undefined"
+        ? new URLSearchParams(window.location.search)
+        : { get: () => null };
     setPage(Number(queryParams.get("page") || 1));
     setSize(Number(queryParams.get("size") || 100));
     setUser((queryParams.get("user") || ZERO_ADDRESS) as `0x${string}`);
@@ -84,10 +87,8 @@ const App = () => {
         </div>
         <div className="mt-2">
           <div className="grid grid-cols-2 gap-2">
-            <Suspense fallback={`Loadng Page #${page} ...`}>
-              {pools &&
-                pools.map((pool, i) => <Card pool={pool} key={pool.id} />)}
-            </Suspense>
+            {pools &&
+              pools.map((pool, i) => <Card pool={pool} key={pool.id} />)}
           </div>
         </div>
         {pools && pools.length > 0 ? (
@@ -139,4 +140,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default PoolsPage;

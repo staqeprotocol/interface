@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HexColorPicker } from "react-colorful";
+import { GiGuardedTower } from "react-icons/gi";
 import { getAddress } from "viem";
 import { useAccount, useChainId } from "wagmi";
 
@@ -365,12 +366,12 @@ const LaunchPool = () => {
       }
 
       console.log(
-        `Get Metadata: ${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}`
+        `Get Metadata: ${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}?${Math.random()}`
       );
 
       setLoading("Get Metadata ...");
       const getMetadata = await fetch(
-        `https://${CID.parse(resData.IpfsHash).toV1().toString(base32)}.ipfs.dweb.link`
+        `${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}?${Math.random()}`
       );
       const jsonMetadata = await getMetadata.json();
 
@@ -763,29 +764,32 @@ const LaunchPool = () => {
         </form>
       </dialog>
       <dialog id="ipfs" className="modal">
-        <div className="modal-box">
-          <label className="form-control w-full">
-            <div className="label">
-              <span className="label-text">
-                A Pinata JWT key is required to upload metadata to IPFS. Please
-                register at pinata.cloud and insert the JWT key. This is
-                completely free of charge.
-              </span>
+        <div className="modal-box flex flex-col justify-center items-center gap-4">
+          <div className="text-center">
+            A Pinata JWT key is required to upload metadata to IPFS. Please
+            register at pinata.cloud and insert the JWT key. This is completely
+            free of charge.
+          </div>
+          <div className="w-full">
+            <label className="form-control w-full">
+              <input
+                type="text"
+                placeholder="Type here pinata JWT"
+                className="input input-bordered w-full"
+                value={
+                  ipfs ||
+                  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJkOTExNTk3MC00ZGYwLTRiYTctODE4Yi00MzYzZGMxMGVmZjEiLCJlbWFpbCI6InRldHlhbmFpbGluYUBwcm90b24ubWUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJpZCI6IkZSQTEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX0seyJpZCI6Ik5ZQzEiLCJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MX1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiMzNlM2MxMDcxMWIxNmZjOGU3ZTUiLCJzY29wZWRLZXlTZWNyZXQiOiI4ZGEwZGVmNmYzZmUxNmE3NzBlNDM3NDRjMDNmYmU5MGRhMWZjNTdmMDcyN2Q0M2I1ZTZhODBjYmRkMzQ3YjU3IiwiaWF0IjoxNzE0Njk0NDg3fQ.5OPt9Lt51cQnmSrqOIIE5YSl1XPEA44v1cXhyzSEg18"
+                }
+                onChange={(event) => {
+                  setIpfs(event.currentTarget.value);
+                }}
+              />
+            </label>
+            <div className="modal-action">
+              <form method="dialog">
+                <button className="btn">Save</button>
+              </form>
             </div>
-            <input
-              type="text"
-              placeholder="Type here pinata JWT"
-              className="input input-bordered w-full"
-              value={ipfs}
-              onChange={(event) => {
-                setIpfs(event.currentTarget.value);
-              }}
-            />
-          </label>
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn">Save</button>
-            </form>
           </div>
         </div>
         <form method="dialog" className="modal-backdrop">
@@ -825,12 +829,19 @@ const LaunchPool = () => {
         </form>
       </dialog>
       <dialog id="not-genesis" className="modal">
-        <div className="modal-box">
-          Stake NFT Genesis is required to create new pools. Please create new
-          NFT Genesis and Stake on the{" "}
-          <Link href="/pool?id=0" target="_blank" className="btn btn-xs">
-            Genesis page
-          </Link>
+        <div className="modal-box flex flex-col justify-center items-center gap-4">
+          <div className="">
+            <GiGuardedTower className="text-6xl" />
+          </div>
+          <div className="text-center">
+            Stake NFT Genesis is required to create new pools.<br></br>Please
+            create new NFT Genesis and Stake on:
+          </div>
+          <div>
+            <Link href="/pool?id=0" target="_blank" className="btn btn-md">
+              Genesis page
+            </Link>
+          </div>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>

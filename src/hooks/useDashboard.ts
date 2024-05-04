@@ -1,30 +1,35 @@
-import { ZERO_ADDRESS } from '@/src/constants';
+import { ZERO_ADDRESS } from "@/src/constants";
 import { useReadStaqeProtocolGetTotalPools } from "@/src/generated";
-import { usePools } from '@/src/hooks/usePools';
-import { useRewards } from '@/src/hooks/useRewards';
-import { useStakes } from '@/src/hooks/useStakes';
-import { IMetadataMap, IPoolExtendedDetails, IRewardsMap, IStakesMap } from "@/src/interfaces";
-import { useEffect, useState } from 'react';
-import { useMetadata } from './useMetadata';
+import { usePools } from "@/src/hooks/usePools";
+import { useRewards } from "@/src/hooks/useRewards";
+import { useStakes } from "@/src/hooks/useStakes";
+import {
+  IMetadataMap,
+  IPoolExtendedDetails,
+  IRewardsMap,
+  IStakesMap,
+} from "@/src/interfaces";
+import { useEffect, useState } from "react";
+import { useMetadata } from "./useMetadata";
 
 interface IDashboard {
-  completed: boolean | undefined,
+  completed: boolean | undefined;
   pools: {
-    total: bigint,
-    processed: bigint
-  },
+    total: bigint;
+    processed: bigint;
+  };
   staked: {
-    pools: IPoolExtendedDetails[],
-    stakes: IStakesMap,
-    rewards: IRewardsMap,
-    metadata: IMetadataMap
-  },
+    pools: IPoolExtendedDetails[];
+    stakes: IStakesMap;
+    rewards: IRewardsMap;
+    metadata: IMetadataMap;
+  };
   launched: {
-    pools: IPoolExtendedDetails[],
-    stakes: IStakesMap,
-    rewards: IRewardsMap,
-    metadata: IMetadataMap
-  }
+    pools: IPoolExtendedDetails[];
+    stakes: IStakesMap;
+    rewards: IRewardsMap;
+    metadata: IMetadataMap;
+  };
 }
 
 export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
@@ -32,14 +37,12 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
   const [totalPoolsProcessed, setTotalPoolsProcessed] = useState(0n);
 
   const [page, setPage] = useState(1);
-  const { pools: getPools } = usePools(page, 100, user);
+  const { pools: getPools } = usePools(page, 10, user);
 
   const [stakedPools, setStakedPools] = useState<IPoolExtendedDetails[]>([]);
-  const [launchedPools, setLaunchedPools] = useState<IPoolExtendedDetails[]>([]);
-
-  console.log("launchedPools", launchedPools && launchedPools.length);
-  console.log("getPools", getPools && getPools.length);
-  console.log("page", page);
+  const [launchedPools, setLaunchedPools] = useState<IPoolExtendedDetails[]>(
+    []
+  );
 
   const [completed, setCompleted] = useState<boolean | undefined>();
 
@@ -53,7 +56,7 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
 
   useEffect(() => {
     if (totalPoolsProcessed <= 0n) {
-      setLaunchedPools([])
+      setLaunchedPools([]);
     }
 
     if (!getPools?.length || totalPools <= 0n || completed) return;
@@ -85,19 +88,19 @@ export function useDashboard(user: `0x${string}` = ZERO_ADDRESS): IDashboard {
     completed,
     pools: {
       total: totalPools,
-      processed: totalPoolsProcessed
+      processed: totalPoolsProcessed,
     },
     staked: {
       pools: stakedPools,
       stakes: stakedStakes,
       rewards: stakedRewards,
-      metadata: stakedMetadata
+      metadata: stakedMetadata,
     },
     launched: {
       pools: launchedPools,
       stakes: launchedStakes,
       rewards: launchedRewards,
-      metadata: launchedMetadata
-    }
+      metadata: launchedMetadata,
+    },
   };
 }

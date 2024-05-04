@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Link href={`/pools?size=4`}>Pools</Link>
               </li>
               <li>
-                <Link href={`/dashboard?user=${accountAddress ?? ``}`}>
+                <Link href={`/dashboard?account=${accountAddress ?? ``}`}>
                   Dashboard
                 </Link>
               </li>
@@ -60,7 +60,7 @@ const Navbar = () => {
               <Link href={`/pools?size=4`}>Pools</Link>
             </li>
             <li>
-              <Link href={`/dashboard?user=${accountAddress ?? ``}`}>
+              <Link href={`/dashboard?account=${accountAddress ?? ``}`}>
                 Dashboard
               </Link>
             </li>

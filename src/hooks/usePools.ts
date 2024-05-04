@@ -1,7 +1,6 @@
 import { useContext, useMemo } from "react";
 import { useChainId, useReadContracts } from "wagmi";
 
-import { PoolData } from "@/src/app/pool/page";
 import {
   staqeProtocolAbi as abi,
   staqeProtocolAddress,
@@ -17,12 +16,18 @@ import {
   IPools,
 } from "@/src/interfaces";
 
+import PoolData from "../contexts/PoolData";
+
 export const usePoolData = (): IPoolData => {
   const context = useContext(PoolData);
-  if (context === undefined) {
-    throw new Error("usePoolData must be used within a PoolDataProvider");
-  }
-  return context;
+  return (
+    context ?? {
+      id: "",
+      pool: undefined,
+      pools: undefined,
+      refetch: () => null,
+    }
+  );
 };
 
 export function usePool(id: string, account: `0x${string}`): IPoolResult {

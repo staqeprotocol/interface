@@ -61,9 +61,12 @@ function User() {
   const [account, setAccount] = useState<`0x${string}`>(accountAddress);
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
+    const queryParams =
+      typeof window !== "undefined"
+        ? new URLSearchParams(window.location.search)
+        : { get: () => null };
     setAccount((queryParams.get("account") || accountAddress) as `0x${string}`);
-  }, []);
+  }, [accountAddress]);
 
   const { completed, pools, staked, launched } = useDashboard(account);
 
@@ -279,7 +282,16 @@ function User() {
           </div>
         </div>
         <div className="divider">
-          <h1 className="text-l link font-mono">{account}</h1>
+          <h1
+            className="text-l link font-mono"
+            onClick={() => {
+              navigator.clipboard
+                .writeText(account)
+                .catch((err) => console.error("Failed to copy text: ", err));
+            }}
+          >
+            {account}
+          </h1>
         </div>
         {!completed && pools.total > 0n && (
           <div className="absolute inset-0 w-full h-full z-20">
@@ -296,7 +308,6 @@ function User() {
                       ).toString(),
                     } as any
                   }
-                  role="progressbar"
                 >
                   {((pools.processed * 100n) / pools.total).toString()}%
                 </div>

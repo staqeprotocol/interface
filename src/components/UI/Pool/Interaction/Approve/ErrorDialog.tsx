@@ -1,4 +1,3 @@
-import { WriteContractErrorType } from "@wagmi/core";
 import { useEffect } from "react";
 
 export const ErrorDialog = ({
@@ -31,8 +30,8 @@ export const ErrorDialog = ({
               />
             </svg>
             <span>
-              {error.metaMessages.map((mess) => (
-                <div>{mess}</div>
+              {error.metaMessages.map((mess, i) => (
+                <div key={i}>{mess}</div>
               ))}
             </span>
           </div>

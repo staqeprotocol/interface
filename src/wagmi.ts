@@ -32,7 +32,7 @@ const bitTorrent = defineChain({
 export const config = createConfig({
   chains: [localhost, scrollSepolia, bitTorrent, bscTestnet],
   connectors: [injected()],
-  ssr: true,
+  ssr: false,
   storage: createStorage({
     storage: cookieStorage,
   }),
