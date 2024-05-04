@@ -335,7 +335,6 @@ export const Stake = () => {
                           if (status === "success") {
                             refetchErc20();
                             refetcErc721();
-                            modal?.close();
                           }
                         }}
                       />
