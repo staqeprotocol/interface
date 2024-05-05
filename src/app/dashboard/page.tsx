@@ -265,7 +265,7 @@ function Dashboard() {
     });
 
     return combined.sort((a, b) =>
-      a.block > b.block ? 1 : Number(a.pool.id) < Number(b.pool.id) ? 1 : -1
+      a.block > b.block ? -1 : Number(a.pool.id) < Number(b.pool.id) ? 1 : -1
     );
   }, [staked, launched]);
 
