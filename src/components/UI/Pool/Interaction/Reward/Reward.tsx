@@ -1,6 +1,6 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { PiCoinsDuotone } from "react-icons/pi";
-import { useAccount } from "wagmi";
+import { useAccount, useWaitForTransactionReceipt } from "wagmi";
 
 import { ZERO_ADDRESS as ZERO } from "@/src/constants";
 
@@ -18,7 +18,7 @@ import { MdOutlineGeneratingTokens } from "react-icons/md";
 export const Reward = () => {
   const { address: accountAddress = ZERO } = useAccount();
 
-  const { pool } = usePoolData();
+  const { pool, refetch } = usePoolData();
 
   const STK = useMemo(
     () =>
@@ -42,6 +42,7 @@ export const Reward = () => {
     [pool]
   );
 
+  const [onChainLoading, setonChainLoading] = useState(false);
   const [error, setError] = useState(0);
   const [isERC721, setIsERC721] = useState(!!STK === !!NFT ? undefined : !!NFT);
   const [afterBlocks, setAfterBlocks] = useState<number | undefined>();
@@ -54,7 +55,19 @@ export const Reward = () => {
   );
   const tokenBalance = useTokenBalance(token) as string;
 
-  const { writeContract, status } = useWriteStaqeProtocolAddReward();
+  const {
+    writeContract,
+    status,
+    data: hash,
+  } = useWriteStaqeProtocolAddReward();
+  const { status: onChain } = useWaitForTransactionReceipt({ hash });
+
+  useEffect(() => {
+    if (onChain === "success") {
+      setonChainLoading(false);
+      setTimeout(() => refetch(), 100);
+    }
+  }, [onChain]);
 
   const handleReward = useCallback(
     (isApproved = false) => {
@@ -102,6 +115,7 @@ export const Reward = () => {
             setIsERC721(undefined);
             setTokenAmount(undefined);
             setAfterBlocks(undefined);
+            setonChainLoading(true);
           },
         }
       );
@@ -147,7 +161,11 @@ export const Reward = () => {
         <div className="flex-1 content-center">
           <div className="text-sm text-neutral-600 w-full text-center px-4">
             <div>
-              <MdOutlineGeneratingTokens className="text-7xl w-full text-center" />
+              {onChainLoading ? (
+                <span className="loading loading-dots loading-lg"></span>
+              ) : (
+                <MdOutlineGeneratingTokens className="text-7xl w-full text-center" />
+              )}
             </div>
             Choose who gets the reward, ERC20 or ERC721 Stackers, simply select
             the token symbol
@@ -237,7 +255,7 @@ export const Reward = () => {
           className={`btn btn-block text-2xl overflow-hidden relative btn-success ${status === "pending" && `animate-pulse`} ${status === "success" && `btn-disabled`}`}
           onClick={() => handleReward(!!token?.isApproved)}
         >
-          {status === "pending" ? (
+          {status === "pending" || onChainLoading ? (
             <span className="loading loading-dots loading-sm"></span>
           ) : (
             `Add Reward`

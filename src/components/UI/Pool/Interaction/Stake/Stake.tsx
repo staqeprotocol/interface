@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { PiCoinsDuotone } from "react-icons/pi";
-import { useAccount } from "wagmi";
+import { useAccount, useWaitForTransactionReceipt } from "wagmi";
 
 import { ZERO_ADDRESS as ZERO } from "@/src/constants";
 
@@ -62,6 +62,7 @@ export const Stake = () => {
 
   const [mint, setMint] = useState(<></>);
 
+  const [onChainLoading, setonChainLoading] = useState(false);
   const [error, setError] = useState(0);
   const [isERC721, setIsERC721] = useState(!!STK === !!NFT ? undefined : !!NFT);
   const [stakeAmount, setStakeAmount, handleStakeAmount] = useTokenAmount(
@@ -76,7 +77,7 @@ export const Stake = () => {
     pool?.stakeERC20.tokenAddress,
     accountAddress
   );
-  const [erc721, refetcErc721] = useErc721(
+  const [erc721, refetchErc721] = useErc721(
     pool?.stakeERC721.tokenAddress,
     accountAddress
   );
@@ -127,7 +128,20 @@ export const Stake = () => {
     if (args) writeContract({ args }, { onSuccess });
   }, [args]);
 
-  const { writeContract, status, error: err } = useWriteStaqeProtocolStake();
+  const {
+    writeContract,
+    status,
+    error: err,
+    data: hash,
+  } = useWriteStaqeProtocolStake();
+  const { status: onChain } = useWaitForTransactionReceipt({ hash });
+
+  useEffect(() => {
+    if (onChain === "success") {
+      setonChainLoading(false);
+      setTimeout(() => refetch(), 100);
+    }
+  }, [onChain]);
 
   console.log("err", err);
 
@@ -144,6 +158,7 @@ export const Stake = () => {
     setIsERC721(undefined);
     setStakeAmount(undefined);
     setStakeId(undefined);
+    setonChainLoading(true);
   };
 
   const handleStake = () => {
@@ -255,7 +270,11 @@ export const Stake = () => {
         <div className="flex-1 content-center">
           <div className="text-sm text-neutral-600 w-full text-center px-4">
             <div>
-              <MdOutlineGeneratingTokens className="text-7xl w-full text-center" />
+              {onChainLoading ? (
+                <span className="loading loading-dots loading-lg"></span>
+              ) : (
+                <MdOutlineGeneratingTokens className="text-7xl w-full text-center" />
+              )}
             </div>
             It is possible to stake ERC20 tokens and ERC721 NFT in one stake,
             just select the token symbol and set the amount or NFT ID.
@@ -334,7 +353,8 @@ export const Stake = () => {
                           console.log("status", status);
                           if (status === "success") {
                             refetchErc20();
-                            refetcErc721();
+                            refetchErc721();
+                            refetch();
                           }
                         }}
                       />
@@ -354,7 +374,7 @@ export const Stake = () => {
           className={`btn btn-block text-2xl overflow-hidden relative btn-success ${status === "pending" && `animate-pulse`} ${status === "success" && `btn-disabled`}`}
           onClick={() => handleStake()}
         >
-          {status === "pending" ? (
+          {status === "pending" || onChainLoading ? (
             <span className="loading loading-dots loading-sm"></span>
           ) : (
             `Stake Now`
