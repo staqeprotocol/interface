@@ -173,7 +173,7 @@ export const erc20Abi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -471,7 +471,7 @@ export const erc20ToqenAbi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -479,7 +479,7 @@ export const erc20ToqenAddress = {
   97: '0xeA0531fa7A5ccaa2089081e601c431eA61efD91A',
   1029: '0xeA0531fa7A5ccaa2089081e601c431eA61efD91A',
   1337: '0xa16E02E87b7454126E5E10d957A927A7F5B5d2be',
-  43113: '0xF8842aE51cdd33c57c57b706781E5f19D07c656f',
+  43113: '0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB',
   80002: '0xF8842aE51cdd33c57c57b706781E5f19D07c656f',
   534351: '0xeA0531fa7A5ccaa2089081e601c431eA61efD91A',
 } as const
@@ -487,7 +487,7 @@ export const erc20ToqenAddress = {
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -730,7 +730,7 @@ export const erc721Abi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -1026,7 +1026,7 @@ export const erc721ToqenAbi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -1034,7 +1034,7 @@ export const erc721ToqenAddress = {
   97: '0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22',
   1029: '0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22',
   1337: '0xB7A5bd0345EF1Cc5E66bf61BdeC17D2461fBd968',
-  43113: '0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF',
+  43113: '0x2D5c03eC83eC161530D7841a00780dcf23121629',
   80002: '0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF',
   534351: '0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22',
 } as const
@@ -1042,7 +1042,7 @@ export const erc721ToqenAddress = {
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -1052,110 +1052,13 @@ export const erc721ToqenConfig = {
 } as const
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// QrossFactory
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/**
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const qrossFactoryAbi = [
-  {
-    type: 'constructor',
-    inputs: [
-      { name: 'router_', internalType: 'address', type: 'address' },
-      { name: 'link_', internalType: 'address', type: 'address' },
-    ],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'name', internalType: 'string', type: 'string' },
-      { name: 'symbol', internalType: 'string', type: 'string' },
-      { name: 'maxSupply', internalType: 'uint256', type: 'uint256' },
-      { name: 'tokenPrice', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'createERC20',
-    outputs: [
-      { name: 'token', internalType: 'contract ERC20Q', type: 'address' },
-    ],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'name', internalType: 'string', type: 'string' },
-      { name: 'symbol', internalType: 'string', type: 'string' },
-      { name: 'maxSupply', internalType: 'uint256', type: 'uint256' },
-      { name: 'tokenPrice', internalType: 'uint256', type: 'uint256' },
-      { name: 'baseURI', internalType: 'string', type: 'string' },
-    ],
-    name: 'createERC721',
-    outputs: [
-      { name: 'token', internalType: 'contract ERC721Q', type: 'address' },
-    ],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'link',
-    outputs: [{ name: '', internalType: 'address', type: 'address' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'router',
-    outputs: [{ name: '', internalType: 'address', type: 'address' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'event',
-    anonymous: false,
-    inputs: [
-      {
-        name: 'tokenAddress',
-        internalType: 'address',
-        type: 'address',
-        indexed: true,
-      },
-      {
-        name: 'creator',
-        internalType: 'address',
-        type: 'address',
-        indexed: true,
-      },
-    ],
-    name: 'TokenCreated',
-  },
-  { type: 'error', inputs: [], name: 'CREATE2FailedOnDeploy' },
-  { type: 'error', inputs: [], name: 'ReentrancyGuardReentrantCall' },
-] as const
-
-/**
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const qrossFactoryAddress = {
-  80002: '0x3AE2475877243dD4331c51BABa39832450526597',
-} as const
-
-/**
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const qrossFactoryConfig = {
-  address: qrossFactoryAddress,
-  abi: qrossFactoryAbi,
-} as const
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // StaqeProtocol
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -2102,7 +2005,7 @@ export const staqeProtocolAbi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -2110,7 +2013,7 @@ export const staqeProtocolAddress = {
   97: '0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f',
   1029: '0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f',
   1337: '0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82',
-  43113: '0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7',
+  43113: '0xE72A7E626d99155df3aD887e2fC257e4E5b39F73',
   80002: '0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7',
   534351: '0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f',
 } as const
@@ -2118,7 +2021,7 @@ export const staqeProtocolAddress = {
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -2134,7 +2037,7 @@ export const staqeProtocolConfig = {
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -2193,7 +2096,7 @@ export const toqenAbi = [
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -2201,7 +2104,7 @@ export const toqenAddress = {
   97: '0x3AE2475877243dD4331c51BABa39832450526597',
   1029: '0x3AE2475877243dD4331c51BABa39832450526597',
   1337: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
-  43113: '0x18414dFDc066704014798a175A1b110efd5F066f',
+  43113: '0xC28A2145aF2880d40e9D7F75a19c68B389c39B45',
   80002: '0x18414dFDc066704014798a175A1b110efd5F066f',
   534351: '0x3AE2475877243dD4331c51BABa39832450526597',
 } as const
@@ -2209,7 +2112,7 @@ export const toqenAddress = {
 /**
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -2366,7 +2269,7 @@ export const useWatchErc20TransferEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2380,7 +2283,7 @@ export const useReadErc20Toqen = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2396,7 +2299,7 @@ export const useReadErc20ToqenDomainSeparator =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2411,7 +2314,7 @@ export const useReadErc20ToqenAllowance = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2426,7 +2329,7 @@ export const useReadErc20ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2441,7 +2344,7 @@ export const useReadErc20ToqenDecimals = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2457,7 +2360,7 @@ export const useReadErc20ToqenEip712Domain =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2472,7 +2375,7 @@ export const useReadErc20ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2487,7 +2390,7 @@ export const useReadErc20ToqenName = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2502,7 +2405,7 @@ export const useReadErc20ToqenNonces = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2517,7 +2420,7 @@ export const useReadErc20ToqenOwner = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2532,7 +2435,7 @@ export const useReadErc20ToqenSymbol = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2547,7 +2450,7 @@ export const useReadErc20ToqenTokenPrice = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2564,7 +2467,7 @@ export const useReadErc20ToqenTotalSupply = /*#__PURE__*/ createUseReadContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2578,7 +2481,7 @@ export const useWriteErc20Toqen = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2593,7 +2496,7 @@ export const useWriteErc20ToqenApprove = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2608,7 +2511,7 @@ export const useWriteErc20ToqenMint = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2623,7 +2526,7 @@ export const useWriteErc20ToqenPermit = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2638,7 +2541,7 @@ export const useWriteErc20ToqenTransfer = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2654,7 +2557,7 @@ export const useWriteErc20ToqenTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2669,7 +2572,7 @@ export const useWriteErc20ToqenWithdraw = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2683,7 +2586,7 @@ export const useSimulateErc20Toqen = /*#__PURE__*/ createUseSimulateContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2699,7 +2602,7 @@ export const useSimulateErc20ToqenApprove =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2715,7 +2618,7 @@ export const useSimulateErc20ToqenMint =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2731,7 +2634,7 @@ export const useSimulateErc20ToqenPermit =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2747,7 +2650,7 @@ export const useSimulateErc20ToqenTransfer =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2763,7 +2666,7 @@ export const useSimulateErc20ToqenTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2779,7 +2682,7 @@ export const useSimulateErc20ToqenWithdraw =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2794,7 +2697,7 @@ export const useWatchErc20ToqenEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2810,7 +2713,7 @@ export const useWatchErc20ToqenApprovalEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -2826,7 +2729,7 @@ export const useWatchErc20ToqenEip712DomainChangedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x70991fB075aCC5783Cca9BF3B450fd0b3d38AEEB)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xF8842aE51cdd33c57c57b706781E5f19D07c656f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0xeA0531fa7A5ccaa2089081e601c431eA61efD91A)
  */
@@ -3031,7 +2934,7 @@ export const useWatchErc721TransferEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3045,7 +2948,7 @@ export const useReadErc721Toqen = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3060,7 +2963,7 @@ export const useReadErc721ToqenBalanceOf = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3075,7 +2978,7 @@ export const useReadErc721ToqenBaseUri = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3091,7 +2994,7 @@ export const useReadErc721ToqenGetApproved =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3107,7 +3010,7 @@ export const useReadErc721ToqenIsApprovedForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3122,7 +3025,7 @@ export const useReadErc721ToqenMaxSupply = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3137,7 +3040,7 @@ export const useReadErc721ToqenName = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3152,7 +3055,7 @@ export const useReadErc721ToqenOwner = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3167,7 +3070,7 @@ export const useReadErc721ToqenOwnerOf = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3183,7 +3086,7 @@ export const useReadErc721ToqenSupportsInterface =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3198,7 +3101,7 @@ export const useReadErc721ToqenSymbol = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3215,7 +3118,7 @@ export const useReadErc721ToqenTokenPrice = /*#__PURE__*/ createUseReadContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3230,7 +3133,7 @@ export const useReadErc721ToqenTokenUri = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3246,7 +3149,7 @@ export const useReadErc721ToqenTotalSupply =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3260,7 +3163,7 @@ export const useWriteErc721Toqen = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3275,7 +3178,7 @@ export const useWriteErc721ToqenApprove = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3290,7 +3193,7 @@ export const useWriteErc721ToqenMint = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3306,7 +3209,7 @@ export const useWriteErc721ToqenSafeTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3322,7 +3225,7 @@ export const useWriteErc721ToqenSetApprovalForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3338,7 +3241,7 @@ export const useWriteErc721ToqenTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3355,7 +3258,7 @@ export const useWriteErc721ToqenWithdraw = /*#__PURE__*/ createUseWriteContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3369,7 +3272,7 @@ export const useSimulateErc721Toqen = /*#__PURE__*/ createUseSimulateContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3385,7 +3288,7 @@ export const useSimulateErc721ToqenApprove =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3401,7 +3304,7 @@ export const useSimulateErc721ToqenMint =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3417,7 +3320,7 @@ export const useSimulateErc721ToqenSafeTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3433,7 +3336,7 @@ export const useSimulateErc721ToqenSetApprovalForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3449,7 +3352,7 @@ export const useSimulateErc721ToqenTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3465,7 +3368,7 @@ export const useSimulateErc721ToqenWithdraw =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3480,7 +3383,7 @@ export const useWatchErc721ToqenEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3496,7 +3399,7 @@ export const useWatchErc721ToqenApprovalEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3512,7 +3415,7 @@ export const useWatchErc721ToqenApprovalForAllEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x2D5c03eC83eC161530D7841a00780dcf23121629)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0xe6b7D6039Df4215fEc4ECA938Ad465395F5dd4cF)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x1799B3184364B99e2C16B93BD9A3C1e1bd444f22)
  */
@@ -3524,134 +3427,11 @@ export const useWatchErc721ToqenTransferEvent =
   })
 
 /**
- * Wraps __{@link useReadContract}__ with `abi` set to __{@link qrossFactoryAbi}__
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useReadQrossFactory = /*#__PURE__*/ createUseReadContract({
-  abi: qrossFactoryAbi,
-  address: qrossFactoryAddress,
-})
-
-/**
- * Wraps __{@link useReadContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"link"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useReadQrossFactoryLink = /*#__PURE__*/ createUseReadContract({
-  abi: qrossFactoryAbi,
-  address: qrossFactoryAddress,
-  functionName: 'link',
-})
-
-/**
- * Wraps __{@link useReadContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"router"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useReadQrossFactoryRouter = /*#__PURE__*/ createUseReadContract({
-  abi: qrossFactoryAbi,
-  address: qrossFactoryAddress,
-  functionName: 'router',
-})
-
-/**
- * Wraps __{@link useWriteContract}__ with `abi` set to __{@link qrossFactoryAbi}__
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useWriteQrossFactory = /*#__PURE__*/ createUseWriteContract({
-  abi: qrossFactoryAbi,
-  address: qrossFactoryAddress,
-})
-
-/**
- * Wraps __{@link useWriteContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"createERC20"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useWriteQrossFactoryCreateErc20 =
-  /*#__PURE__*/ createUseWriteContract({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-    functionName: 'createERC20',
-  })
-
-/**
- * Wraps __{@link useWriteContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"createERC721"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useWriteQrossFactoryCreateErc721 =
-  /*#__PURE__*/ createUseWriteContract({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-    functionName: 'createERC721',
-  })
-
-/**
- * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link qrossFactoryAbi}__
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useSimulateQrossFactory = /*#__PURE__*/ createUseSimulateContract({
-  abi: qrossFactoryAbi,
-  address: qrossFactoryAddress,
-})
-
-/**
- * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"createERC20"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useSimulateQrossFactoryCreateErc20 =
-  /*#__PURE__*/ createUseSimulateContract({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-    functionName: 'createERC20',
-  })
-
-/**
- * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link qrossFactoryAbi}__ and `functionName` set to `"createERC721"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useSimulateQrossFactoryCreateErc721 =
-  /*#__PURE__*/ createUseSimulateContract({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-    functionName: 'createERC721',
-  })
-
-/**
- * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link qrossFactoryAbi}__
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useWatchQrossFactoryEvent =
-  /*#__PURE__*/ createUseWatchContractEvent({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-  })
-
-/**
- * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link qrossFactoryAbi}__ and `eventName` set to `"TokenCreated"`
- *
- * [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
- */
-export const useWatchQrossFactoryTokenCreatedEvent =
-  /*#__PURE__*/ createUseWatchContractEvent({
-    abi: qrossFactoryAbi,
-    address: qrossFactoryAddress,
-    eventName: 'TokenCreated',
-  })
-
-/**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link staqeProtocolAbi}__
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3665,7 +3445,7 @@ export const useReadStaqeProtocol = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3681,7 +3461,7 @@ export const useReadStaqeProtocolBalanceOf =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3697,7 +3477,7 @@ export const useReadStaqeProtocolCalculateReward =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3713,7 +3493,7 @@ export const useReadStaqeProtocolContractUri =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3729,7 +3509,7 @@ export const useReadStaqeProtocolGetApproved =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3745,7 +3525,7 @@ export const useReadStaqeProtocolGetClaimedAmount =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3760,7 +3540,7 @@ export const useReadStaqeProtocolGetPool = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3776,7 +3556,7 @@ export const useReadStaqeProtocolGetReward =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3792,7 +3572,7 @@ export const useReadStaqeProtocolGetRewards =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3809,7 +3589,7 @@ export const useReadStaqeProtocolGetStake = /*#__PURE__*/ createUseReadContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3825,7 +3605,7 @@ export const useReadStaqeProtocolGetStakes =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3841,7 +3621,7 @@ export const useReadStaqeProtocolGetTotalPools =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3857,7 +3637,7 @@ export const useReadStaqeProtocolIsApprovedForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3872,7 +3652,7 @@ export const useReadStaqeProtocolName = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3887,7 +3667,7 @@ export const useReadStaqeProtocolOwner = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3902,7 +3682,7 @@ export const useReadStaqeProtocolOwnerOf = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3918,7 +3698,7 @@ export const useReadStaqeProtocolSupportsInterface =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3933,7 +3713,7 @@ export const useReadStaqeProtocolSymbol = /*#__PURE__*/ createUseReadContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3949,7 +3729,7 @@ export const useReadStaqeProtocolTokenInfo =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3966,7 +3746,7 @@ export const useReadStaqeProtocolTokenUri = /*#__PURE__*/ createUseReadContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3980,7 +3760,7 @@ export const useWriteStaqeProtocol = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -3996,7 +3776,7 @@ export const useWriteStaqeProtocolAddReward =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4012,7 +3792,7 @@ export const useWriteStaqeProtocolAddRewardWithPermit =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4028,7 +3808,7 @@ export const useWriteStaqeProtocolApprove =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4044,7 +3824,7 @@ export const useWriteStaqeProtocolClaimRewards =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4060,7 +3840,7 @@ export const useWriteStaqeProtocolEditPool =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4076,7 +3856,7 @@ export const useWriteStaqeProtocolLaunchPool =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4092,7 +3872,7 @@ export const useWriteStaqeProtocolRenounceOwnership =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4108,7 +3888,7 @@ export const useWriteStaqeProtocolSafeTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4124,7 +3904,7 @@ export const useWriteStaqeProtocolSetApprovalForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4140,7 +3920,7 @@ export const useWriteStaqeProtocolSetContractUri =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4155,7 +3935,7 @@ export const useWriteStaqeProtocolStake = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4171,7 +3951,7 @@ export const useWriteStaqeProtocolStakeWithPermit =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4187,7 +3967,7 @@ export const useWriteStaqeProtocolTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4203,7 +3983,7 @@ export const useWriteStaqeProtocolTransferOwnership =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4219,7 +3999,7 @@ export const useWriteStaqeProtocolUnstake =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4232,7 +4012,7 @@ export const useSimulateStaqeProtocol = /*#__PURE__*/ createUseSimulateContract(
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4248,7 +4028,7 @@ export const useSimulateStaqeProtocolAddReward =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4264,7 +4044,7 @@ export const useSimulateStaqeProtocolAddRewardWithPermit =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4280,7 +4060,7 @@ export const useSimulateStaqeProtocolApprove =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4296,7 +4076,7 @@ export const useSimulateStaqeProtocolClaimRewards =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4312,7 +4092,7 @@ export const useSimulateStaqeProtocolEditPool =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4328,7 +4108,7 @@ export const useSimulateStaqeProtocolLaunchPool =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4344,7 +4124,7 @@ export const useSimulateStaqeProtocolRenounceOwnership =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4360,7 +4140,7 @@ export const useSimulateStaqeProtocolSafeTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4376,7 +4156,7 @@ export const useSimulateStaqeProtocolSetApprovalForAll =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4392,7 +4172,7 @@ export const useSimulateStaqeProtocolSetContractUri =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4408,7 +4188,7 @@ export const useSimulateStaqeProtocolStake =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4424,7 +4204,7 @@ export const useSimulateStaqeProtocolStakeWithPermit =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4440,7 +4220,7 @@ export const useSimulateStaqeProtocolTransferFrom =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4456,7 +4236,7 @@ export const useSimulateStaqeProtocolTransferOwnership =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4472,7 +4252,7 @@ export const useSimulateStaqeProtocolUnstake =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4487,7 +4267,7 @@ export const useWatchStaqeProtocolEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4503,7 +4283,7 @@ export const useWatchStaqeProtocolApprovalEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4519,7 +4299,7 @@ export const useWatchStaqeProtocolApprovalForAllEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4535,7 +4315,7 @@ export const useWatchStaqeProtocolBatchMetadataUpdateEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4551,7 +4331,7 @@ export const useWatchStaqeProtocolClaimedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4567,7 +4347,7 @@ export const useWatchStaqeProtocolContractUriUpdatedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4583,7 +4363,7 @@ export const useWatchStaqeProtocolLaunchedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4599,7 +4379,7 @@ export const useWatchStaqeProtocolMetadataUpdateEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4615,7 +4395,7 @@ export const useWatchStaqeProtocolOwnershipTransferredEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4631,7 +4411,7 @@ export const useWatchStaqeProtocolRewardedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4647,7 +4427,7 @@ export const useWatchStaqeProtocolStakedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4663,7 +4443,7 @@ export const useWatchStaqeProtocolTransferEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xE72A7E626d99155df3aD887e2fC257e4E5b39F73)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f)
  */
@@ -4679,7 +4459,7 @@ export const useWatchStaqeProtocolUnstakedEvent =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4693,7 +4473,7 @@ export const useWriteToqen = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4708,7 +4488,7 @@ export const useWriteToqenCreateErc20 = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4723,7 +4503,7 @@ export const useWriteToqenCreateErc721 = /*#__PURE__*/ createUseWriteContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4737,7 +4517,7 @@ export const useSimulateToqen = /*#__PURE__*/ createUseSimulateContract({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4753,7 +4533,7 @@ export const useSimulateToqenCreateErc20 =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4769,7 +4549,7 @@ export const useSimulateToqenCreateErc721 =
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
@@ -4783,7 +4563,7 @@ export const useWatchToqenEvent = /*#__PURE__*/ createUseWatchContractEvent({
  *
  * - [__View Contract on Binance Smart Chain Testnet Bsc Scan__](https://testnet.bscscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  * -
- * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0x18414dFDc066704014798a175A1b110efd5F066f)
+ * - [__View Contract on Avalanche Fuji Snow Trace__](https://testnet.snowtrace.io/address/0xC28A2145aF2880d40e9D7F75a19c68B389c39B45)
  * - [__View Contract on Polygon Amoy Polygon Scan__](https://amoy.polygonscan.com/address/0x18414dFDc066704014798a175A1b110efd5F066f)
  * - [__View Contract on Scroll Sepolia Scrollscan__](https://sepolia.scrollscan.com/address/0x3AE2475877243dD4331c51BABa39832450526597)
  */
