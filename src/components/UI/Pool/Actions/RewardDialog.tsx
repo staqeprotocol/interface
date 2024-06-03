@@ -1,9 +1,23 @@
-import { useEffect, useState } from "react";
 import { Alert } from "@/src/components/UI/Pool/Interaction/Approve/Alert";
-import { useWriteStaqeProtocolClaimRewards } from "@/src/generated";
 import { ZERO_ADDRESS } from "@/src/constants";
-import { useAccount } from "wagmi";
+import { useWriteStaqeProtocolClaimRewards } from "@/src/generated";
+import { AvalancheBadge, PolygonBadge } from "cryptocons";
+import { useEffect, useState } from "react";
 import { PiPercentDuotone } from "react-icons/pi";
+import { useAccount, useChainId } from "wagmi";
+
+const chainMap: any = {
+  80002: {
+    selector: "16281711391670634445",
+    name: "Polygon",
+    icon: <PolygonBadge className="w-10 h-10" />,
+  },
+  43113: {
+    selector: "14767482510784806043",
+    name: "Avalanche",
+    icon: <AvalancheBadge className="w-10 h-10" />,
+  },
+};
 
 export const RewardDialog = ({
   poolId,
@@ -14,8 +28,17 @@ export const RewardDialog = ({
   rewardId: bigint;
   handle: () => void;
 }) => {
+  const chainId = useChainId();
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
   const [rewardAddress, setRewardAddress] = useState(accountAddress);
+  const [rewardChain, setRewardChain] = useState(chainMap[chainId]);
+
+  const [selectedChain, setSelectedChain] = useState(null);
+
+  const handleChainSelect = (key: any) => {
+    setSelectedChain(key);
+    setRewardChain(chainMap[key].selector);
+  };
 
   const id = (rewardId + 1n).toString();
 
@@ -83,11 +106,30 @@ export const RewardDialog = ({
             </label>
           </div>
           <div className="w-full">
+            <div className="flex flex-col space-y-1">
+              {Object.keys(chainMap).map((key) => {
+                const chain = chainMap[key];
+                return (
+                  <div
+                    key={key}
+                    className={`flex items-center space-x-2 p-2 border-0 rounded-lg hover:bg-gray-900 cursor-pointer ${
+                      selectedChain === key ? "bg-green-900" : ""
+                    }`}
+                    onClick={() => handleChainSelect(key)}
+                  >
+                    {chain.icon}
+                    <span>{chain.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="w-full">
             <a
               className={`btn btn-block text-2xl overflow-hidden relative btn-success ${status > 0 && status < 3 ? "animate-pulse" : ""}`}
               onClick={() => {
                 writeContract({
-                  args: [[poolId], [[rewardId]], rewardAddress],
+                  args: [[poolId], [[rewardId]], rewardAddress, rewardChain],
                 });
               }}
             >

@@ -9,7 +9,13 @@ import Scroll from "@/src/components/Icons/Scroll";
 import Card from "@/src/components/UI/Pools/Card";
 import { ZERO_ADDRESS } from "@/src/constants";
 import { usePools } from "@/src/hooks/usePools";
-import { BinanceSmartChain, Ethereum, Polygon } from "cryptocons";
+import {
+  AvalancheBadge,
+  BinanceSmartChain,
+  Ethereum,
+  Polygon,
+  PolygonBadge,
+} from "cryptocons";
 import Link from "next/link";
 import { GiFoundryBucket } from "react-icons/gi";
 
@@ -33,6 +39,18 @@ const PoolsPage = () => {
 
   const getIcon = (chainId: number) => {
     switch (chainId) {
+      case 80002:
+        return (
+          <div className="w-30 pt-1">
+            <PolygonBadge />
+          </div>
+        );
+      case 43113:
+        return (
+          <div className="w-30 pt-1">
+            <AvalancheBadge />
+          </div>
+        );
       case 1:
         return <Ethereum size={30} />;
       case 56:

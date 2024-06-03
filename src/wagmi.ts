@@ -1,7 +1,13 @@
 import { injected } from "@wagmi/connectors";
 import { cookieStorage, createConfig, createStorage, http } from "@wagmi/core";
 import { defineChain } from "viem";
-import { bscTestnet, localhost as l, scrollSepolia } from "wagmi/chains";
+import {
+  avalancheFuji,
+  bscTestnet,
+  localhost as l,
+  polygonAmoy,
+  scrollSepolia,
+} from "wagmi/chains";
 
 const localhost = {
   ...l,
@@ -30,7 +36,14 @@ const bitTorrent = defineChain({
 });
 
 export const config = createConfig({
-  chains: [localhost, scrollSepolia, bitTorrent, bscTestnet],
+  chains: [
+    scrollSepolia,
+    polygonAmoy,
+    avalancheFuji,
+    bitTorrent,
+    bscTestnet,
+    localhost,
+  ],
   connectors: [injected()],
   ssr: true,
   storage: createStorage({
@@ -41,6 +54,8 @@ export const config = createConfig({
     [scrollSepolia.id]: http(),
     [bitTorrent.id]: http(),
     [bscTestnet.id]: http(),
+    [polygonAmoy.id]: http(),
+    [avalancheFuji.id]: http(),
   },
 });
 
