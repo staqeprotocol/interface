@@ -1,7 +1,12 @@
 import { Alert } from "@/src/components/UI/Pool/Interaction/Approve/Alert";
 import { ZERO_ADDRESS } from "@/src/constants";
 import { useWriteStaqeProtocolClaimRewards } from "@/src/generated";
-import { AvalancheBadge, PolygonBadge } from "cryptocons";
+import {
+  AvalancheBadge,
+  BinanceSmartChainBadge,
+  EthereumBadge,
+  PolygonBadge,
+} from "cryptocons";
 import { useEffect, useState } from "react";
 import { PiPercentDuotone } from "react-icons/pi";
 import { useAccount, useChainId } from "wagmi";
@@ -16,6 +21,16 @@ const chainMap: any = {
     selector: "14767482510784806043",
     name: "Avalanche",
     icon: <AvalancheBadge className="w-10 h-10" />,
+  },
+  97: {
+    selector: "13264668187771770619",
+    name: "BNB Chain",
+    icon: <BinanceSmartChainBadge className="w-10 h-10" />,
+  },
+  11155111: {
+    selector: "16015286601757825753",
+    name: "Ethereum Sepolia",
+    icon: <EthereumBadge className="w-10 h-10" />,
   },
 };
 
@@ -81,7 +96,7 @@ export const RewardDialog = ({
   return (
     <dialog id={`reward-${id}`} className="modal">
       <div className="modal-box">
-        <div className="grid grid-rows-3 gap-4 items-center w-full">
+        <div className="w-full flex flex-col gap-2 justify-center justify-items-center">
           <Alert status={status} message={message} />
           <div className="w-full">
             <label className="input input-bordered flex items-center gap-2">
@@ -104,24 +119,24 @@ export const RewardDialog = ({
                 }}
               />
             </label>
-          </div>
-          <div className="w-full">
-            <div className="flex flex-col space-y-1">
-              {Object.keys(chainMap).map((key) => {
-                const chain = chainMap[key];
-                return (
-                  <div
-                    key={key}
-                    className={`flex items-center space-x-2 p-2 border-0 rounded-lg hover:bg-gray-900 cursor-pointer ${
-                      selectedChain === key ? "bg-green-900" : ""
-                    }`}
-                    onClick={() => handleChainSelect(key)}
-                  >
-                    {chain.icon}
-                    <span>{chain.name}</span>
-                  </div>
-                );
-              })}
+            <div className="w-full mt-2">
+              <div className="flex flex-col space-y-1">
+                {Object.keys(chainMap).map((key) => {
+                  const chain = chainMap[key];
+                  return (
+                    <div
+                      key={key}
+                      className={`flex items-center space-x-2 p-2 border-0 rounded-lg hover:bg-gray-900 cursor-pointer ${
+                        selectedChain === key ? "bg-green-900" : ""
+                      }`}
+                      onClick={() => handleChainSelect(key)}
+                    >
+                      {chain.icon}
+                      <span>{chain.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
           <div className="w-full">
