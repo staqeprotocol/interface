@@ -14,7 +14,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HexColorPicker } from "react-colorful";
+import { CgSpinner } from "react-icons/cg";
 import { GiGuardedTower } from "react-icons/gi";
+import { HiRocketLaunch } from "react-icons/hi2";
 import { getAddress } from "viem";
 import { useAccount, useChainId } from "wagmi";
 
