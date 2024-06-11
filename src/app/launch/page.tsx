@@ -7,7 +7,6 @@ import {
   useWriteStaqeProtocolLaunchPool,
 } from "@/src/generated";
 import { useErc20, useErc721 } from "@/src/hooks/useErc";
-import { ApplicationAccessTokenService, FleekSdk } from "@fleekxyz/sdk";
 import { Create } from "@toqen/react";
 import { base32 } from "multiformats/bases/base32";
 import { CID } from "multiformats/cid";
@@ -15,9 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { HexColorPicker } from "react-colorful";
-import { CgSpinner } from "react-icons/cg";
 import { GiGuardedTower } from "react-icons/gi";
-import { HiRocketLaunch } from "react-icons/hi2";
 import { getAddress } from "viem";
 import { useAccount, useChainId } from "wagmi";
 
@@ -27,8 +24,7 @@ const LaunchPool = () => {
 
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
 
-  const [pinataJWT, setPinataJWT] = useState("");
-  const [fleekId, setFleekId] = useState("");
+  const [ipfs, setIpfs] = useState("");
 
   const [color, setColor] = useState("");
   const [logo, setLogo] = useState("");
@@ -195,79 +191,38 @@ const LaunchPool = () => {
   const uploadImage = async (
     name: string,
     file: FormDataEntryValue | null
-  ): Promise<string | undefined> => {
+  ): Promise<string> => {
     try {
       const formData = new FormData();
       if (file instanceof File) {
         formData.append("file", file);
       } else {
         console.error(`The field did not contain a file.`);
-        return Promise.resolve("");
+        return "";
       }
       formData.append("pinataMetadata", JSON.stringify({ name }));
       formData.append("pinataOptions", JSON.stringify({ cidVersion: 0 }));
 
-      if (pinataJWT) {
-        const res = await fetch(
-          "https://api.pinata.cloud/pinning/pinFileToIPFS",
-          {
-            method: "POST",
-            headers: {
-              Authorization: `Bearer ${pinataJWT}`,
-            },
-            body: formData,
-          }
-        );
-        const resData = await res.json();
-
-        console.log("uploadImage", resData);
-
-        return Promise.resolve(
-          resData && resData.IpfsHash
-            ? "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32)
-            : ""
-        );
-      } else if (fleekId) {
-        const applicationService = new ApplicationAccessTokenService({
-          clientId: fleekId,
-        });
-
-        const fleekSdk = new FleekSdk({
-          accessTokenService: applicationService,
-        });
-
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = async (e) => {
-            const arrayBuffer = e?.target?.result;
-            console.log("e?.target?.result", e?.target?.result);
-            if (arrayBuffer instanceof ArrayBuffer) {
-              const result = await fleekSdk.ipfs().add({
-                path: name + "[" + Math.random() + "]",
-                content: arrayBuffer,
-              });
-
-              console.log(result);
-
-              if (result && result.cid) {
-                return Promise.resolve(
-                  "ipfs://" + result.cid.toV1().toString(base32)
-                );
-              } else {
-                return Promise.resolve("");
-              }
-            } else {
-              return Promise.resolve("");
-            }
-          };
-          reader.readAsArrayBuffer(file);
-        } else {
-          return Promise.resolve("");
+      const res = await fetch(
+        "https://api.pinata.cloud/pinning/pinFileToIPFS",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${ipfs}`,
+          },
+          body: formData,
         }
-      }
+      );
+      const resData = await res.json();
+
+      console.log("uploadImage", resData);
+
+      return resData && resData.IpfsHash
+        ? "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32)
+        : "";
     } catch (error) {
       console.log("uploadImage", error);
-      return Promise.resolve("");
+      return "";
     }
   };
 
@@ -276,7 +231,7 @@ const LaunchPool = () => {
       return "";
     }
 
-    if (!pinataJWT && !fleekId) {
+    if (!ipfs) {
       const modal: any = document.getElementById("ipfs");
       modal?.showModal();
       return;
@@ -284,11 +239,11 @@ const LaunchPool = () => {
 
     setLoading("Upload Logo Image");
     const logoURI = await uploadImage("Logo", logoFile);
-    setLogo(`${GATEWAY_URL}${logoURI?.replace(/ipfs:\/\//g, "")}`);
+    setLogo(`${GATEWAY_URL}${logoURI.replace(/ipfs:\/\//g, "")}`);
 
     setLoading("Upload Background Image");
     const backgroundURI = await uploadImage("Image", imageFile);
-    setImage(`${GATEWAY_URL}${backgroundURI?.replace(/ipfs:\/\//g, "")}`);
+    setImage(`${GATEWAY_URL}${backgroundURI.replace(/ipfs:\/\//g, "")}`);
 
     let stakeURI;
     let nftURI;
@@ -297,19 +252,19 @@ const LaunchPool = () => {
     if (stakeErc20 && logoErc20File) {
       setLoading("Upload ERC20 Logo");
       stakeURI = await uploadImage("ERC20", logoErc20File);
-      setLogoErc20(`${GATEWAY_URL}${stakeURI?.replace(/ipfs:\/\//g, "")}`);
+      setLogoErc20(`${GATEWAY_URL}${stakeURI.replace(/ipfs:\/\//g, "")}`);
     }
 
     if (stakeErc721 && logoErc721File) {
       setLoading("Upload ERC721 Logo");
       nftURI = await uploadImage("ERC20", logoErc721File);
-      setLogoErc721(`${GATEWAY_URL}${nftURI?.replace(/ipfs:\/\//g, "")}`);
+      setLogoErc721(`${GATEWAY_URL}${nftURI.replace(/ipfs:\/\//g, "")}`);
     }
 
     if (rewardErc20 && logoRewardFile) {
       setLoading("Upload Reward Logo");
       rewardURI = await uploadImage("Reward", logoRewardFile);
-      setLogoReward(`${GATEWAY_URL}${rewardURI?.replace(/ipfs:\/\//g, "")}`);
+      setLogoReward(`${GATEWAY_URL}${rewardURI.replace(/ipfs:\/\//g, "")}`);
     }
 
     if (name == "" || description == "" || logoURI == "") {
@@ -366,25 +321,25 @@ const LaunchPool = () => {
 
       console.log("Tokens", tokens);
 
-      const jsonString = JSON.stringify({
-        name: name,
-        description: description,
-        image: logoURI,
-        background_color: color.replace("#", ""),
-        banner_image: backgroundURI,
-        tags: {
-          staqe: {
-            name: "Staqe Protocol",
-            description: "Tokens used to create a pool in Staqe.App",
-          },
-        },
-        tokens,
-      });
-
-      const encoder = new TextEncoder();
-      const jsonBuffer = encoder.encode(jsonString);
-
-      const jsonBlob = new Blob([jsonString], { type: "application/json" });
+      const jsonBlob = new Blob(
+        [
+          JSON.stringify({
+            name: name,
+            description: description,
+            image: logoURI,
+            background_color: color.replace("#", ""),
+            banner_image: backgroundURI,
+            tags: {
+              staqe: {
+                name: "Staqe Protocol",
+                description: "Tokens used to create a pool in Staqe.App",
+              },
+            },
+            tokens,
+          }),
+        ],
+        { type: "application/json" }
+      );
 
       const formData = new FormData();
       formData.append("file", jsonBlob, "filename.json");
@@ -392,54 +347,39 @@ const LaunchPool = () => {
       formData.append("pinataOptions", JSON.stringify({ cidVersion: 0 }));
 
       setLoading("Upload Metadata");
-
-      let ipfsGway = `${GATEWAY_URL}`;
-
-      if (pinataJWT) {
-        const res = await fetch(
-          "https://api.pinata.cloud/pinning/pinFileToIPFS",
-          {
-            method: "POST",
-            headers: {
-              Authorization: `Bearer ${pinataJWT}`,
-            },
-            body: formData,
-          }
-        );
-        const resData = await res.json();
-
-        if (resData && resData.IpfsHash) {
-          metadata =
-            "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32);
-          ipfsGway += CID.parse(resData.IpfsHash).toV1().toString(base32);
+      const res = await fetch(
+        "https://api.pinata.cloud/pinning/pinFileToIPFS",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${ipfs}`,
+          },
+          body: formData,
         }
-      } else if (fleekId) {
-        const applicationService = new ApplicationAccessTokenService({
-          clientId: fleekId,
-        });
+      );
+      const resData = await res.json();
 
-        const fleekSdk = new FleekSdk({
-          accessTokenService: applicationService,
-        });
-
-        const result = await fleekSdk.ipfs().add({
-          path: name + "[" + Math.random() + "]",
-          content: jsonBuffer,
-        });
-
-        if (result && result.cid) {
-          metadata = "ipfs://" + result.cid.toV1().toString(base32);
-          ipfsGway += result.cid.toV1().toString(base32);
-        }
+      if (resData && resData.IpfsHash) {
+        // metadata = `0x${Buffer.from(bs58.decode(resData.IpfsHash)).toString("hex").slice(4)}`;
+        metadata =
+          "ipfs://" + CID.parse(resData.IpfsHash).toV1().toString(base32);
       }
 
-      console.log(`Get Metadata: ${metadata}`);
+      console.log(
+        `Get Metadata: ${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}?${Math.random()}`
+      );
 
       setLoading("Get Metadata ...");
-      const getMetadata = await fetch(`${ipfsGway}?${Math.random()}`);
+      const getMetadata = await fetch(
+        `${GATEWAY_URL}${CID.parse(resData.IpfsHash).toV1().toString(base32)}?${Math.random()}`
+      );
       const jsonMetadata = await getMetadata.json();
 
-      console.log("Metadata", ipfsGway, jsonMetadata);
+      console.log(
+        "Metadata",
+        CID.parse(resData.IpfsHash).toV1().toString(base32),
+        jsonMetadata
+      );
 
       if (metadata && jsonMetadata && jsonMetadata.name === name) {
         setLoading("Send To Blockchain");
@@ -800,21 +740,6 @@ const LaunchPool = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-full h-full my-4">
-        <button
-          className={`btn btn-outline btn-block btn-lg btn-success ${loading && "animate-pulse"}`}
-          onClick={
-            hasGenesis
-              ? actionLaunchPool
-              : () => {
-                  const modal: any = document.getElementById("not-genesis");
-                  modal?.showModal();
-                }
-          }
-        >
-          {loading || "Launch Pool"}
-        </button>
-      </div> */}
       <dialog id="total-max" className="modal">
         <div className="modal-box">
           <label className="form-control w-full">
@@ -842,57 +767,21 @@ const LaunchPool = () => {
         </form>
       </dialog>
       <dialog id="ipfs" className="modal">
-        <div className="modal-box flex flex-col gap-4">
-          <div className="w-full flex flex-col gap-2">
-            <ul>
-              <li>Required to upload metadata to IPFS:</li>
-              <li>
-                - Application Access Token for{" "}
-                <span className="bg-black rounded-sm px-1">staqe.app</span> (
-                <a
-                  href="https://docs.fleek.xyz/docs/SDK#application-access-token"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-100"
-                >
-                  How to get Client Id from Fleek?
-                </a>
-                )
-              </li>
-            </ul>
-            <label className="form-control w-full">
-              <input
-                type="text"
-                placeholder="Type here fleek client id"
-                className="input input-bordered w-full"
-                value={fleekId}
-                onChange={(event) => {
-                  setFleekId(event.currentTarget.value);
-                }}
-              />
-            </label>
-            <div className="divider">OR</div>
-            <ul>
-              <li>Required to upload metadata to IPFS:</li>
-              <li>
-                - JWT key (
-                <a
-                  href="https://docs.pinata.cloud/account-management/api-keys"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-100"
-                >
-                  How to get JWT key from Pinata?
-                </a>
-                )
-              </li>
-            </ul>
+        <div className="modal-box flex flex-col justify-center items-center gap-4">
+          <div className="text-center">
+            A Pinata JWT key is required to upload metadata to IPFS. Please
+            register at pinata.cloud and insert the JWT key. This is completely
+            free of charge.
+          </div>
+          <div className="w-full">
             <label className="form-control w-full">
               <input
                 type="text"
                 placeholder="Type here pinata JWT"
                 className="input input-bordered w-full"
-                value={pinataJWT}
+                value={ipfs}
                 onChange={(event) => {
-                  setPinataJWT(event.currentTarget.value);
+                  setIpfs(event.currentTarget.value);
                 }}
               />
             </label>
