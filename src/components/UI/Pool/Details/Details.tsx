@@ -1,4 +1,5 @@
 import { ZERO_ADDRESS } from "@/src/constants";
+import { staqeProtocolAddress } from "@/src/generated";
 import { useMetadata } from "@/src/hooks/useMetadata";
 import { usePoolData } from "@/src/hooks/usePools";
 import { useTimestamp } from "@/src/hooks/useTimestamps";
@@ -13,6 +14,7 @@ import {
   PiUserDuotone,
 } from "react-icons/pi";
 import { SiOpensea } from "react-icons/si";
+import { useChainId } from "wagmi";
 
 export const Details = () => {
   const { id, pool, pools } = usePoolData();
@@ -20,6 +22,21 @@ export const Details = () => {
   const { [id]: metadata } = useMetadata(pools);
 
   const launchBlock = useTimestamp(pool?.launchBlock);
+
+  const chainId = useChainId();
+
+  const getName = (chainId: number) => {
+    switch (chainId) {
+      case 80002:
+        return "amoy";
+      case 43113:
+        return "avalanche-fuji";
+      case 97:
+        return "bsc-testnet";
+      default:
+        return "";
+    }
+  };
 
   return (
     <div className="relative flex flex-row mt-2 h-full w-full">
@@ -34,12 +51,17 @@ export const Details = () => {
                 <div className="flex">
                   <div className="flex text-sm items-center">
                     Pool #{pool?.id}{" "}
-                    <a
-                      href={`/`}
-                      className="link underline-offset-4 decoration-dotted ml-2"
-                    >
-                      <SiOpensea />
-                    </a>
+                    {getName(chainId) ? (
+                      <a
+                        href={`https://testnets.opensea.io/assets/${getName(chainId)}/${staqeProtocolAddress[chainId]}/${pool?.id}`}
+                        className="link underline-offset-4 decoration-dotted ml-2"
+                        target="_blank"
+                      >
+                        <SiOpensea />
+                      </a>
+                    ) : (
+                      <></>
+                    )}
                   </div>
                   <div className="text-xs text-neutral-500 ml-auto">
                     <a
