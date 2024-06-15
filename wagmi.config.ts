@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     foundry({
-      project: "../01Jun24-v1-core",
+      project: "../staqe-mainnet",
       deployments: {
         StaqeProtocol: {
           1337: "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
@@ -16,6 +16,7 @@ export default defineConfig({
           97: "0x9cbD0A9D9fb8e8c1baA4687E4e8068aDA57a220f",
           80002: "0x446565A7fE06Fb89f9d6Fe855F8210dbcDe88Ee7",
           43113: "0xE72A7E626d99155df3aD887e2fC257e4E5b39F73",
+          199: "0x67980361970AAc40767187437326234c4Ac4d003",
         },
         QrossFactory: {
           80002: "0x3AE2475877243dD4331c51BABa39832450526597",
@@ -27,6 +28,7 @@ export default defineConfig({
           97: "0x3AE2475877243dD4331c51BABa39832450526597",
           80002: "0x18414dFDc066704014798a175A1b110efd5F066f",
           43113: "0xC28A2145aF2880d40e9D7F75a19c68B389c39B45",
+          199: "0xA03A3528aD6A799C5ACf61C95435A7270D8b036e",
         },
         ERC20Toqen: {
           1337: "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be",

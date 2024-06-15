@@ -1,6 +1,8 @@
 "use client";
 
+import { NavbarContext } from "@/src/app/providers";
 import Link from "next/link";
+import { useContext } from "react";
 
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
@@ -8,6 +10,17 @@ const Navbar = () => {
   const { address: accountAddress, status, chainId } = useAccount();
   const { connectors, connect } = useConnect();
   const { disconnect } = useDisconnect();
+
+  const context = useContext(NavbarContext);
+  if (!context) {
+    throw new Error("Navbar must be used within a NavbarProvider");
+  }
+
+  const { isMainnet, setIsMainnet } = context;
+
+  const toggleNetwork = () => {
+    setIsMainnet(!isMainnet);
+  };
 
   return (
     <header className="relative">
@@ -68,11 +81,48 @@ const Navbar = () => {
         </div>
         <div className="navbar-end mr-4">
           {accountAddress ? (
-            <div className="font-mono">{`${accountAddress.slice(0, 5)}..${accountAddress.slice(accountAddress.length - 3)}`}</div>
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-sm m-1"
+              >
+                <div className="font-mono">{`${accountAddress.slice(
+                  0,
+                  5
+                )}..${accountAddress.slice(accountAddress.length - 3)}`}</div>
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <div className="flex justify-between">
+                    <span>Chain ID:</span>
+                    <span>{chainId}</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex justify-end items-center justify-items-center gap-2">
+                    <span>Testnet</span>
+                    <input
+                      type="checkbox"
+                      className="toggle toggle-md"
+                      checked={isMainnet}
+                      onChange={toggleNetwork}
+                    />
+                    <span>Mainnet</span>
+                  </div>
+                </li>
+                <li>
+                  <a onClick={() => disconnect()}>Disconnect</a>
+                </li>
+              </ul>
+            </div>
           ) : (
             <button
               onClick={() => connect({ connector: connectors[0] })}
-              className="btn"
+              className="btn btn-ghost btn-sm m-1"
             >
               Connect
             </button>

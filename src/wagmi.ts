@@ -3,6 +3,7 @@ import { cookieStorage, createConfig, createStorage, http } from "@wagmi/core";
 import { defineChain } from "viem";
 import {
   avalancheFuji,
+  bitTorrent,
   bscTestnet,
   localhost as l,
   polygonAmoy,
@@ -11,6 +12,7 @@ import {
 
 const localhost = {
   ...l,
+  testnet: true,
   contracts: {
     multicall3: {
       address: "0xcA11bde05977b3631167028862bE2a173976CA11" as `0x${string}`,
@@ -18,9 +20,10 @@ const localhost = {
   },
 };
 
-const bitTorrent = defineChain({
+const bitTorrentDonau = defineChain({
   id: 1029,
   name: "BitTorrent Chain Donau",
+  testnet: true,
   nativeCurrency: { name: "BitTorrent", symbol: "BTT", decimals: 18 },
   rpcUrls: {
     default: { http: ["https://pre-rpc.bittorrentchain.io/"] },
@@ -41,6 +44,7 @@ export const config = createConfig({
     polygonAmoy,
     avalancheFuji,
     bitTorrent,
+    bitTorrentDonau,
     bscTestnet,
     localhost,
   ],
@@ -53,6 +57,7 @@ export const config = createConfig({
     [localhost.id]: http(),
     [scrollSepolia.id]: http(),
     [bitTorrent.id]: http(),
+    [bitTorrentDonau.id]: http(),
     [bscTestnet.id]: http(),
     [polygonAmoy.id]: http(),
     [avalancheFuji.id]: http(),

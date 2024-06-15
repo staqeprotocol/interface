@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useAccount, useSwitchChain } from "wagmi";
 
+import { NavbarContext } from "@/src/app/providers";
 import GradientWrapper from "@/src/components/GradientWrapper";
 import Bittorrent from "@/src/components/Icons/Bittorrent";
 import Scroll from "@/src/components/Icons/Scroll";
@@ -27,6 +28,13 @@ const PoolsPage = () => {
   const [size, setSize] = useState(2);
   const [user, setUser] = useState<`0x${string}`>(ZERO_ADDRESS);
 
+  const context = useContext(NavbarContext);
+  if (!context) {
+    throw new Error("ChildComponent must be used within a NavbarProvider");
+  }
+
+  const { isMainnet, setIsMainnet } = context;
+
   useEffect(() => {
     const queryParams =
       typeof window !== "undefined"
@@ -36,6 +44,16 @@ const PoolsPage = () => {
     setSize(Number(queryParams.get("size") || 100));
     setUser((queryParams.get("user") || ZERO_ADDRESS) as `0x${string}`);
   }, []);
+
+  useEffect(() => {
+    if (!chains || !account) return;
+    chains.forEach((chain: any) => {
+      const isActive = account.isConnected && account.chainId === chain.id;
+      if (isActive) {
+        setIsMainnet(!chain.testnet);
+      }
+    });
+  }, [account.chainId]);
 
   const getIcon = (chainId: number) => {
     switch (chainId) {
@@ -69,6 +87,12 @@ const PoolsPage = () => {
             <Bittorrent />
           </div>
         );
+      case 199:
+        return (
+          <div className="w-30">
+            <Bittorrent />
+          </div>
+        );
       case 97:
         return <BinanceSmartChain size={30} />;
       default:
@@ -81,15 +105,27 @@ const PoolsPage = () => {
   return (
     <section className="custom-screen">
       <GradientWrapper wrapperclassname="max-w-3xl h-[250px] top-12 inset-0 sm:h-[300px] lg:h-[650px]">
-        <div role="tablist" className="tabs tabs-boxed opacity-80">
+        <div
+          role="tablist"
+          className="tabs tabs-boxed opacity-80 flex justify-around items-center justify-items-center gap-2"
+        >
           {chains.map((chain: any) => {
+            if (isMainnet) {
+              if (chain.testnet) return;
+            } else {
+              if (!chain.testnet) return;
+            }
             const isActive =
               account.isConnected && account.chainId === chain.id;
             return (
               <a
                 key={chain.id}
                 role="tab"
-                className={`tab z-10 ${isActive ? `tab-active bg-black/70 !important` : `tooltip hover:scale-110`}`}
+                className={`tab z-10 ${
+                  isActive
+                    ? `tab-active bg-black/70 !important`
+                    : `tooltip hover:scale-110`
+                }`}
                 data-tip={chain.name}
                 onClick={() => switchChain({ chainId: chain.id })}
               >
