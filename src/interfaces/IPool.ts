@@ -37,6 +37,7 @@ export interface IPoolResult {
 
 export interface IPoolData {
   id: string;
+  chain?: number;
   pool: IPoolExtendedDetails | undefined;
   pools: IPoolExtendedDetails[] | undefined;
   refetch: () => void;

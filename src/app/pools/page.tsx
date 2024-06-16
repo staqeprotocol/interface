@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, useEffect, useState } from "react";
-import { useAccount, useSwitchChain } from "wagmi";
+import { useAccount, useChainId, useSwitchChain } from "wagmi";
 
 import { NavbarContext } from "@/src/app/providers";
 import GradientWrapper from "@/src/components/GradientWrapper";
@@ -23,6 +23,7 @@ import { GiFoundryBucket } from "react-icons/gi";
 const PoolsPage = () => {
   const account = useAccount();
   const { chains, switchChain }: any = useSwitchChain();
+  const chainId = useChainId();
 
   const [page, setPage] = useState(1);
   const [size, setSize] = useState(2);
@@ -116,7 +117,8 @@ const PoolsPage = () => {
               if (!chain.testnet) return;
             }
             const isActive =
-              account.isConnected && account.chainId === chain.id;
+              (account.isConnected && account.chainId === chain.id) ||
+              chainId === chain.id;
             return (
               <a
                 key={chain.id}
@@ -142,7 +144,13 @@ const PoolsPage = () => {
         <div className="mt-2">
           <div className="grid grid-cols-2 gap-2">
             {pools &&
-              pools.map((pool, i) => <Card pool={pool} key={pool.id} />)}
+              pools.map((pool, i) => (
+                <Card
+                  pool={pool}
+                  chain={account.chainId || chainId}
+                  key={pool.id}
+                />
+              ))}
           </div>
         </div>
         {pools && pools.length > 0 ? (

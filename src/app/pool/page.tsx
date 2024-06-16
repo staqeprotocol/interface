@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useAccount } from "wagmi";
+import { useEffect, useMemo, useState } from "react";
+import { useAccount, useChainId, useSwitchChain } from "wagmi";
 
 import { ZERO_ADDRESS } from "@/src/constants";
 
@@ -15,9 +15,12 @@ import { Interaction } from "@/src/components/UI/Pool/Interaction";
 import PoolData from "@/src/contexts/PoolData";
 
 function PoolPage() {
-  const { address: accountAddress = ZERO_ADDRESS } = useAccount();
+  const { address: accountAddress = ZERO_ADDRESS, chainId } = useAccount();
+  const { switchChain }: any = useSwitchChain();
+  const currentId = useChainId();
 
   const [id, setId] = useState<string>("0");
+  const [chain, setChain] = useState<number>(0);
   const [account, setAccount] = useState<`0x${string}`>(accountAddress);
 
   useEffect(() => {
@@ -26,13 +29,23 @@ function PoolPage() {
         ? new URLSearchParams(window.location.search)
         : { get: () => null };
     setId(queryParams.get("id") || "0");
+    setChain(parseInt(queryParams.get("chain") || "0"));
     setAccount((queryParams.get("account") || accountAddress) as `0x${string}`);
   }, [accountAddress]);
 
-  const { pool, pools, refetch } = usePool(id, account);
+  const { pool, pools, refetch } = usePool(id, chain, account);
+
+  const needSwitch = currentId && chainId && currentId !== chainId;
+
+  console.log("needSwitch", needSwitch, currentId, chainId, chain);
+
+  useMemo(() => {
+    if (!chainId || !currentId || !chain) return;
+    switchChain({ chainId: chain });
+  }, [currentId, chainId, switchChain, chain]);
 
   return (
-    <PoolData.Provider value={{ id, pool, pools, refetch }}>
+    <PoolData.Provider value={{ id, chain, pool, pools, refetch }}>
       <section className="custom-screen">
         <div className="flex flex-col gap-2 w-full h-full">
           <div className="w-full h-[40rem]">

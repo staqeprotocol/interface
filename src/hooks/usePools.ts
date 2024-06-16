@@ -30,13 +30,18 @@ export const usePoolData = (): IPoolData => {
   );
 };
 
-export function usePool(id: string, account: `0x${string}`): IPoolResult {
+export function usePool(
+  id: string,
+  chain: number,
+  account: `0x${string}`
+): IPoolResult {
   const args = useMemo(
     () => (id ? ([account, BigInt(id)] as const) : undefined),
     [id, account]
   );
 
   const { data: dataPool, refetch }: IPoolWagmi = useReadStaqeProtocolGetPool({
+    chainId: (chain ? chain : undefined) as any,
     args,
   });
 

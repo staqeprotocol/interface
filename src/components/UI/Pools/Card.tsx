@@ -198,10 +198,8 @@ function formatNumber(
   }
 }
 
-function Card({ pool }: { pool: IPoolExtendedDetails }) {
+function Card({ pool, chain }: { pool: IPoolExtendedDetails; chain?: number }) {
   const { [pool.id]: metadata } = useMetadata([pool]);
-
-  console.log("metadata first", metadata, pool);
 
   const totalStakedERC20 = formatNumber(
     pool?.totalStakedERC20,
@@ -247,7 +245,7 @@ function Card({ pool }: { pool: IPoolExtendedDetails }) {
             ></span>
             <div className="text-white text-xl z-20">
               <Link
-                href={`/pool?id=${pool.id}`}
+                href={`/pool?id=${pool.id}${chain ? `&chain=${chain}` : ``}`}
                 className="link decoration-dotted underline-offset-4"
               >
                 {metadata?.name}

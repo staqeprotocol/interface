@@ -11,8 +11,6 @@ export const Hero = () => {
   const { [id]: metadata } = useMetadata(pools);
   const launchBlock = useTimestamp(pool?.launchBlock);
 
-  console.log("metadata", metadata);
-
   const hasERC20 = useMemo(
     () => (pool?.stakeERC20.tokenAddress ?? ZERO) !== ZERO,
     [pool]

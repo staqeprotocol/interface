@@ -3,6 +3,7 @@ import { createContext } from "react";
 
 const PoolData = createContext<IPoolData>({
   id: "",
+  chain: undefined,
   pool: undefined,
   pools: undefined,
   refetch: () => {},
