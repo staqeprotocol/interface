@@ -22,7 +22,7 @@ export const NavbarContext = createContext<NavbarContextProps | undefined>(
 
 export function Providers({ children }: Props) {
   const [queryClient] = useState(() => new QueryClient());
-  const [isMainnet, setIsMainnet] = useState<boolean>(false);
+  const [isMainnet, setIsMainnet] = useState<boolean>(true);
 
   return (
     <WagmiProvider config={config as any}>
