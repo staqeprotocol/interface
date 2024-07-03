@@ -91,23 +91,24 @@ export const Details = () => {
               <div className="flex flex-col justify-center items-left w-full h-full rounded-2xl bg-base-200 p-2 overflow-hidden border-8 border-base-200">
                 <div className="text-xs text-neutral-600 flex flex-row justify-between p-0 m-0">
                   <span>Stake Token:</span>
-                  {isOwner && (
-                    <button
-                      className="btn btn-xs btn-success"
-                      onClick={() => {
-                        const modal: any = document.getElementById("modal");
-                        setManage(
-                          <Manage
-                            address={pool?.stakeERC20?.tokenAddress}
-                            dark
-                          />
-                        );
-                        modal?.showModal();
-                      }}
-                    >
-                      manage
-                    </button>
-                  )}
+                  {pool?.stakeERC20.tokenAddress !== ZERO_ADDRESS &&
+                    isOwner && (
+                      <button
+                        className="btn btn-xs btn-success"
+                        onClick={() => {
+                          const modal: any = document.getElementById("modal");
+                          setManage(
+                            <Manage
+                              address={pool?.stakeERC20?.tokenAddress}
+                              dark
+                            />
+                          );
+                          modal?.showModal();
+                        }}
+                      >
+                        manage
+                      </button>
+                    )}
                 </div>
                 {pool?.stakeERC20.tokenAddress === ZERO_ADDRESS ? (
                   <div className="text-xs text-neutral-500">NONE</div>
@@ -162,7 +163,27 @@ export const Details = () => {
             <div className="relative w-full overflow-hidden rounded-2xl">
               <PiImagesSquareDuotone className="absolute inset-y-0 right-0 top-0 text-8xl opacity-5 pointer-events-none scale-x-[-1]" />
               <div className="flex flex-col justify-center items-left w-full h-full rounded-2xl bg-base-200 p-2 overflow-hidden border-8 border-base-200">
-                <div className="text-xs text-neutral-600 mb-2">Stake NFT:</div>
+                <div className="text-xs text-neutral-600 flex flex-row justify-between p-0 m-0">
+                  <span>Stake NFT:</span>
+                  {pool?.stakeERC721.tokenAddress !== ZERO_ADDRESS &&
+                    isOwner && (
+                      <button
+                        className="btn btn-xs btn-success"
+                        onClick={() => {
+                          const modal: any = document.getElementById("modal");
+                          setManage(
+                            <Manage
+                              address={pool?.stakeERC721?.tokenAddress}
+                              dark
+                            />
+                          );
+                          modal?.showModal();
+                        }}
+                      >
+                        manage
+                      </button>
+                    )}
+                </div>
                 {pool?.stakeERC721.tokenAddress === ZERO_ADDRESS ? (
                   <div className="text-xs text-neutral-500">NONE</div>
                 ) : (
