@@ -3,7 +3,9 @@ import { staqeProtocolAddress } from "@/src/generated";
 import { useMetadata } from "@/src/hooks/useMetadata";
 import { usePoolData } from "@/src/hooks/usePools";
 import { useTimestamp } from "@/src/hooks/useTimestamps";
+import { Manage } from "@toqen/react";
 import Image from "next/image";
+import { useMemo, useState } from "react";
 import {
   PiCoinsDuotone,
   PiHandCoinsDuotone,
@@ -14,7 +16,7 @@ import {
   PiUserDuotone,
 } from "react-icons/pi";
 import { SiOpensea } from "react-icons/si";
-import { useChainId } from "wagmi";
+import { useAccount, useChainId } from "wagmi";
 
 export const Details = () => {
   const { id, pool, pools } = usePoolData();
@@ -24,6 +26,13 @@ export const Details = () => {
   const launchBlock = useTimestamp(pool?.launchBlock);
 
   const chainId = useChainId();
+
+  const { address: accountAddress = ZERO_ADDRESS } = useAccount();
+
+  const isOwner = useMemo(
+    () => pool && pool.owner === accountAddress,
+    [pool, accountAddress]
+  );
 
   const getName = (chainId: number) => {
     switch (chainId) {
@@ -37,6 +46,8 @@ export const Details = () => {
         return "";
     }
   };
+
+  const [manage, setManage] = useState(<></>);
 
   return (
     <div className="relative flex flex-row mt-2 h-full w-full">
@@ -78,8 +89,25 @@ export const Details = () => {
             <div className="relative w-full overflow-hidden rounded-2xl">
               <PiCoinsDuotone className="absolute inset-y-0 right-0 top-0 text-8xl opacity-5 pointer-events-none scale-x-[-1]" />
               <div className="flex flex-col justify-center items-left w-full h-full rounded-2xl bg-base-200 p-2 overflow-hidden border-8 border-base-200">
-                <div className="text-xs text-neutral-600 mb-2">
-                  Stake Token:
+                <div className="text-xs text-neutral-600 flex flex-row justify-between p-0 m-0">
+                  <span>Stake Token:</span>
+                  {isOwner && (
+                    <button
+                      className="btn btn-xs btn-success"
+                      onClick={() => {
+                        const modal: any = document.getElementById("modal");
+                        setManage(
+                          <Manage
+                            address={pool?.stakeERC20?.tokenAddress}
+                            dark
+                          />
+                        );
+                        modal?.showModal();
+                      }}
+                    >
+                      manage
+                    </button>
+                  )}
                 </div>
                 {pool?.stakeERC20.tokenAddress === ZERO_ADDRESS ? (
                   <div className="text-xs text-neutral-500">NONE</div>
@@ -264,6 +292,22 @@ export const Details = () => {
           </div>
         </div>
       </div>
+      <dialog id="modal" className="modal w-full">
+        <div className="modal-box m-0 p-0">
+          <div className="relative">
+            <form method="dialog">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-4 top-0">
+                ✕
+              </button>
+            </form>
+            <h3 className="text-lg font-extrabold ml-4 my-4">Manage</h3>
+            <hr className="border-0 border-slate-200 dark:border-slate-700" />
+          </div>
+          <div className="flex justify-center items-center m-4 p-4 mt-1 pt-1">
+            {manage}
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
