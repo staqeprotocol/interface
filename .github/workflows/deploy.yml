@@ -37,7 +37,7 @@ jobs:
           cname: staqe.app
 
       - name: Deploy to IPFS
-        uses: aquiladev/ipfs-action@v1
+        uses: aquiladev/ipfs-action@master
         with:
           path: ./out
           service: pinata
