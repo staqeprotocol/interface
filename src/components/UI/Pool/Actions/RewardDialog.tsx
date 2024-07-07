@@ -46,7 +46,7 @@ export const RewardDialog = ({
   const chainId = useChainId();
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
   const [rewardAddress, setRewardAddress] = useState(accountAddress);
-  const [rewardChain, setRewardChain] = useState(chainMap[chainId]);
+  const [rewardChain, setRewardChain] = useState(null);
 
   const [selectedChain, setSelectedChain] = useState(null);
 
@@ -98,7 +98,7 @@ export const RewardDialog = ({
       <div className="modal-box">
         <div className="w-full flex flex-col gap-2 justify-center justify-items-center">
           <Alert status={status} message={message} />
-          <div className="w-full">
+          <div className="w-full mb-2">
             <label className="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -119,32 +119,36 @@ export const RewardDialog = ({
                 }}
               />
             </label>
-            <div className="w-full mt-2">
-              <div className="flex flex-col space-y-1">
-                {Object.keys(chainMap).map((key) => {
-                  const chain = chainMap[key];
-                  return (
-                    <div
-                      key={key}
-                      className={`flex items-center space-x-2 p-2 border-0 rounded-lg hover:bg-gray-900 cursor-pointer ${
-                        selectedChain === key ? "bg-green-900" : ""
-                      }`}
-                      onClick={() => handleChainSelect(key)}
-                    >
-                      {chain.icon}
-                      <span>{chain.name}</span>
-                    </div>
-                  );
-                })}
+            {(chainId === 80002 || chainId === 43113 || chainId === 97) && (
+              <div className="w-full">
+                <div className="flex flex-col space-y-1">
+                  {Object.keys(chainMap).map((key) => {
+                    const chain = chainMap[key];
+                    return (
+                      <div
+                        key={key}
+                        className={`flex items-center space-x-2 p-2 border-0 rounded-lg hover:bg-gray-900 cursor-pointer ${
+                          selectedChain === key ? "bg-green-900" : ""
+                        }`}
+                        onClick={() => handleChainSelect(key)}
+                      >
+                        {chain.icon}
+                        <span>{chain.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="w-full">
             <a
               className={`btn btn-block text-2xl overflow-hidden relative btn-success ${status > 0 && status < 3 ? "animate-pulse" : ""}`}
               onClick={() => {
                 writeContract({
-                  args: [[poolId], [[rewardId]], rewardAddress, rewardChain],
+                  args: rewardChain
+                    ? [[poolId], [[rewardId]], rewardAddress, rewardChain]
+                    : [[poolId], [[rewardId]], rewardAddress],
                 });
               }}
             >
