@@ -1,4 +1,5 @@
 import { TOKEN_LOGO, ZERO_ADDRESS as ZERO } from "@/src/constants";
+import { useWriteStaqeProtocolEditPool } from "@/src/generated";
 import { useMetadata } from "@/src/hooks/useMetadata";
 import { usePoolData } from "@/src/hooks/usePools";
 import { useTimestamp } from "@/src/hooks/useTimestamps";
@@ -76,6 +77,8 @@ export const Hero = () => {
     return result;
   }, [pool]);
 
+  const { writeContract, status: offChain } = useWriteStaqeProtocolEditPool();
+
   return (
     <div className="flex flex-col w-full h-full">
       <div className="flex items-center overflow-hidden rounded-2xl w-full h-3/5 relative bg-slate-200/10">
@@ -100,7 +103,25 @@ export const Hero = () => {
           ></span>
         )}
       </div>
-      <div className="flex flex-row items-center p-4 mx-6 mb-2 -mt-16 overflow-hidden break-words rounded-2xl backdrop-blur-2xl backdrop-saturate-200 shadow-blur border-0 bg-slate-200/10 w-auto h-1/5">
+      <div className="relative flex flex-row items-center p-4 mx-6 mb-2 -mt-16 overflow-hidden break-words rounded-2xl backdrop-blur-2xl backdrop-saturate-200 shadow-blur border-0 bg-slate-200/10 w-auto h-1/5">
+        <span
+          className="absolute right-0 top-0 rounded-bl-2xl bg-slate-800/30 text-white/30 px-4 hover:bg-slate-800/10 hover:text-white cursor-pointer text-xs backdrop-blur-2xl backdrop-saturate-200 shadow-blur"
+          onClick={() => {
+            pool?.id &&
+              writeContract({
+                args: [
+                  BigInt(pool?.id),
+                  0n,
+                  /^_/.test(pool?.tokenURI)
+                    ? `${pool?.tokenURI.replace(/^_/, "")}`
+                    : `_${pool?.tokenURI}`,
+                ],
+              });
+          }}
+        >
+          {pool?.tokenURI &&
+            (/^_/.test(pool?.tokenURI) ? `show pool` : `hide pool`)}
+        </span>
         <div className="w-auto">
           <div className="bg-slate-200/10 h-24 w-24 mask mask-hexagon-2">
             {metadata && (

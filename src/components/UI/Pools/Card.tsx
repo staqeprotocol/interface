@@ -15,8 +15,6 @@ const Stake = ({
   erc721?: IToken | undefined;
   metadata: IMetadata | undefined;
 }) => {
-  console.log("metadata", metadata);
-
   const logoERC20 = useMemo(() => {
     if (!metadata || !erc20) return TOKEN_LOGO;
     return metadata?.logoURIs?.[erc20.tokenAddress];
@@ -64,7 +62,7 @@ const Stake = ({
       {hasERC20 && (
         <div className="tooltip" data-tip={erc20.symbol}>
           <Image
-            src={logoERC20 ?? ""}
+            src={logoERC20 || `/images/STK.svg`}
             width={0}
             height={0}
             alt="ERC20"
@@ -78,7 +76,7 @@ const Stake = ({
           data-tip={erc721?.symbol}
         >
           <Image
-            src={logoERC721 ?? ""}
+            src={logoERC721 || `/images/NFT.svg`}
             width={0}
             height={0}
             alt="ERC721"
@@ -138,7 +136,7 @@ const Reward = ({
       {hasReward ? (
         <div className="tooltip" data-tip={erc20.symbol}>
           <Image
-            src={logoReward ?? ""}
+            src={logoReward || `/images/STK.svg`}
             width={0}
             height={0}
             alt="Reward"

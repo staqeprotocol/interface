@@ -144,13 +144,15 @@ const PoolsPage = () => {
         <div className="mt-2">
           <div className="grid grid-cols-2 gap-2">
             {pools &&
-              pools.map((pool, i) => (
-                <Card
-                  pool={pool}
-                  chain={account.chainId || chainId}
-                  key={pool.id}
-                />
-              ))}
+              pools.map((pool, i) =>
+                /^ipfs/.test(pool.tokenURI) ? (
+                  <Card
+                    pool={pool}
+                    chain={account.chainId || chainId}
+                    key={pool.id}
+                  />
+                ) : undefined
+              )}
           </div>
         </div>
         {pools && pools.length > 0 ? (

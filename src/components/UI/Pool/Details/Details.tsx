@@ -5,6 +5,7 @@ import { usePoolData } from "@/src/hooks/usePools";
 import { useTimestamp } from "@/src/hooks/useTimestamps";
 import { Manage } from "@toqen/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
   PiCoinsDuotone,
@@ -149,13 +150,7 @@ export const Details = () => {
                 <div className="flex text-sm">
                   <div>{launchBlock}</div>
                   <div className="text-xs text-neutral-500 ml-auto">
-                    <a
-                      href={`${pool?.tokenURI}`}
-                      target="_blank"
-                      className="link underline-offset-4 decoration-dotted"
-                    >
-                      Block #{pool?.launchBlock.toString()}
-                    </a>
+                    Block #{pool?.launchBlock.toString()}
                   </div>
                 </div>
               </div>
@@ -224,15 +219,15 @@ export const Details = () => {
                   {pool?.owner && pool?.owner === ZERO_ADDRESS ? (
                     <>NONE</>
                   ) : (
-                    <a
-                      href={`/`}
+                    <Link
+                      href={`/dashboard?account=${pool?.owner}`}
                       target="_blank"
                       className="link underline-offset-4 decoration-dotted"
                     >
                       {pool?.owner && pool?.owner === ZERO_ADDRESS
                         ? `NONE`
                         : pool?.owner}
-                    </a>
+                    </Link>
                   )}
                 </div>
               </div>

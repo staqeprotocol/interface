@@ -37,8 +37,6 @@ function PoolPage() {
 
   const needSwitch = currentId && chainId && currentId !== chainId;
 
-  console.log("needSwitch", needSwitch, currentId, chainId, chain);
-
   useMemo(() => {
     if (!chainId || !currentId || !chain) return;
     switchChain({ chainId: chain });
