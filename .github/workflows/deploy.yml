@@ -35,11 +35,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           cname: staqe.app
-
-      - name: Deploy to IPFS
-        uses: aquiladev/ipfs-action@master
-        with:
-          path: ./out
-          service: pinata
-          pinataKey: ${{ secrets.PINATA_API_KEY }}
-          pinataSecret: ${{ secrets.PINATA_SECRET_API_KEY }}
