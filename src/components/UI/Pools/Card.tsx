@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 
 import { TOKEN_LOGO, ZERO_ADDRESS as ZERO } from "@/src/constants";
 import { useMetadata } from "@/src/hooks/useMetadata";
 import { IMetadata, IPoolExtendedDetails, IToken } from "@/src/interfaces";
 import Link from "next/link";
+import { Address } from "viem";
+import { useChainId, useChains } from "wagmi";
 
 const Stake = ({
   erc20,
@@ -27,13 +29,28 @@ const Stake = ({
   const hasERC20 = erc20 && !!erc20.symbol;
   const hasERC721 = erc721 && !!erc721.symbol;
 
+  const chainId = useChainId();
+  const chains = useChains();
+
+  const getExplorer = useCallback(
+    (address?: Address) => {
+      const c = chains.filter((chain) => chain.id === chainId);
+      console.log(c);
+      return c && c.length && address
+        ? c[0].blockExplorers?.default.url + "/address/" + address
+        : "";
+    },
+    [chainId]
+  );
+
   const STK = hasERC20 && (
     <span>
       <span className="text-white bg-gray-700 px-2 py-1 rounded-lg">
         {erc20.symbol}
       </span>
       <a
-        href={`${erc20.tokenAddress}`}
+        href={getExplorer(erc20.tokenAddress)}
+        target="_blank"
         className="link decoration-dotted underline-offset-2 font-mono text-gray-400 ml-1"
       >
         {erc20.tokenAddress.slice(0, 5)}..
@@ -48,7 +65,8 @@ const Stake = ({
         {erc721.symbol}
       </span>
       <a
-        href={`${erc721.tokenAddress}`}
+        href={getExplorer(erc721.tokenAddress)}
+        target="_blank"
         className="link decoration-dotted underline-offset-2 font-mono text-gray-400 ml-1"
       >
         {erc721.tokenAddress.slice(0, 5)}..
@@ -110,13 +128,28 @@ const Reward = ({
 
   const hasReward = erc20 && !!erc20.symbol;
 
+  const chainId = useChainId();
+  const chains = useChains();
+
+  const getExplorer = useCallback(
+    (address?: Address) => {
+      const c = chains.filter((chain) => chain.id === chainId);
+      console.log(c);
+      return c && c.length && address
+        ? c[0].blockExplorers?.default.url + "/address/" + address
+        : "";
+    },
+    [chainId]
+  );
+
   const RWD = hasReward ? (
     <span>
       <span className="text-white bg-gray-700 px-2 py-1 rounded-lg">
         {erc20.symbol}
       </span>
       <a
-        href={`${erc20.tokenAddress}`}
+        href={getExplorer(erc20.tokenAddress)}
+        target="_blank"
         className="link decoration-dotted underline-offset-2 font-mono text-gray-400 ml-1"
       >
         {erc20.tokenAddress.slice(0, 5)}..

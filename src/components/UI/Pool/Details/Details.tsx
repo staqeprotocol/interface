@@ -6,7 +6,7 @@ import { useTimestamp } from "@/src/hooks/useTimestamps";
 import { Manage } from "@toqen/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import {
   PiCoinsDuotone,
   PiHandCoinsDuotone,
@@ -17,7 +17,8 @@ import {
   PiUserDuotone,
 } from "react-icons/pi";
 import { SiOpensea } from "react-icons/si";
-import { useAccount, useChainId } from "wagmi";
+import { Address } from "viem";
+import { useAccount, useChainId, useChains } from "wagmi";
 
 export const Details = () => {
   const { id, pool, pools } = usePoolData();
@@ -27,6 +28,7 @@ export const Details = () => {
   const launchBlock = useTimestamp(pool?.launchBlock);
 
   const chainId = useChainId();
+  const chains = useChains();
 
   const { address: accountAddress = ZERO_ADDRESS } = useAccount();
 
@@ -47,6 +49,17 @@ export const Details = () => {
         return "";
     }
   };
+
+  const getExplorer = useCallback(
+    (address?: Address) => {
+      const c = chains.filter((chain) => chain.id === chainId);
+      console.log(c);
+      return c && c.length && address
+        ? c[0].blockExplorers?.default.url + "/address/" + address
+        : "";
+    },
+    [chainId]
+  );
 
   const [manage, setManage] = useState(<></>);
 
@@ -132,7 +145,7 @@ export const Details = () => {
                     <div className="mx-2">{pool?.stakeERC20.symbol}</div>
                     <div className="text-xs text-neutral-500 ml-auto overflow-hidden">
                       <a
-                        href={`/`}
+                        href={getExplorer(pool?.stakeERC20.tokenAddress)}
                         target="_blank"
                         className="link underline-offset-4 decoration-dotted"
                       >
@@ -200,7 +213,7 @@ export const Details = () => {
                     <div className="mx-2">{pool?.stakeERC721.symbol}</div>
                     <div className="text-xs text-neutral-500 ml-auto overflow-hidden">
                       <a
-                        href={`/`}
+                        href={getExplorer(pool?.stakeERC721.tokenAddress)}
                         target="_blank"
                         className="link underline-offset-4 decoration-dotted"
                       >
@@ -285,7 +298,7 @@ export const Details = () => {
                     <div className="mx-2">{pool?.rewardToken.symbol}</div>
                     <div className="text-xs text-neutral-500 ml-auto overflow-hidden">
                       <a
-                        href={`/`}
+                        href={getExplorer(pool?.rewardToken.tokenAddress)}
                         target="_blank"
                         className="link underline-offset-4 decoration-dotted"
                       >
