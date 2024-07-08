@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 
 import { TOKEN_LOGO } from "@/src/constants";
 import { useLogo } from "@/src/hooks/useLogos";
@@ -14,7 +14,8 @@ import {
   PiBatteryPlusVerticalDuotone,
   PiHandCoinsDuotone,
 } from "react-icons/pi";
-import { useBlockNumber } from "wagmi";
+import { Address } from "viem";
+import { useBlockNumber, useChainId, useChains } from "wagmi";
 import { RewardDialog } from "../RewardDialog";
 
 const Action = ({
@@ -47,6 +48,19 @@ const Token = ({
 }) => {
   const logo = useLogo(reward?.rewardToken?.tokenAddress);
 
+  const chainId = useChainId();
+  const chains = useChains();
+
+  const getExplorer = useCallback(
+    (address?: Address) => {
+      const c = chains.filter((chain) => chain.id === chainId);
+      return c && c.length && address
+        ? c[0].blockExplorers?.default.url + "/address/" + address
+        : "";
+    },
+    [chainId]
+  );
+
   return (
     <td className="w-60">
       <div className="flex items-center justify-center gap-4">
@@ -67,7 +81,11 @@ const Token = ({
         </div>
         <div className="text-neutral-400">
           <div className="flex justify-center items-center h-full text-xl">
-            <a className="link decoration-dotted underline-offset-8">
+            <a
+              href={getExplorer(reward.rewardToken.tokenAddress)}
+              target="_blank"
+              className="link decoration-dotted underline-offset-8"
+            >
               {reward.rewardToken.symbol}
             </a>
           </div>

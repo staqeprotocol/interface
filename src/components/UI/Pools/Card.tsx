@@ -35,7 +35,6 @@ const Stake = ({
   const getExplorer = useCallback(
     (address?: Address) => {
       const c = chains.filter((chain) => chain.id === chainId);
-      console.log(c);
       return c && c.length && address
         ? c[0].blockExplorers?.default.url + "/address/" + address
         : "";
@@ -134,7 +133,6 @@ const Reward = ({
   const getExplorer = useCallback(
     (address?: Address) => {
       const c = chains.filter((chain) => chain.id === chainId);
-      console.log(c);
       return c && c.length && address
         ? c[0].blockExplorers?.default.url + "/address/" + address
         : "";

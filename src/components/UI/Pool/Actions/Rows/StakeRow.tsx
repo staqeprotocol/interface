@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { TOKEN_LOGO } from "@/src/constants";
 import { useWriteStaqeProtocolUnstake } from "@/src/generated";
 import { usePoolData } from "@/src/hooks/usePools";
 import { useTimestamp } from "@/src/hooks/useTimestamps";
@@ -8,9 +9,10 @@ import {
   IPoolExtendedDetails,
   IStakeDetails,
 } from "@/src/interfaces";
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { PiBatteryVerticalFullDuotone, PiHandDuotone } from "react-icons/pi";
-import { TOKEN_LOGO } from "@/src/constants";
+import { Address } from "viem";
+import { useChainId, useChains } from "wagmi";
 
 const Action = ({
   pool,
@@ -60,6 +62,19 @@ const Token = ({
     [stake]
   );
 
+  const chainId = useChainId();
+  const chains = useChains();
+
+  const getExplorer = useCallback(
+    (address?: Address) => {
+      const c = chains.filter((chain) => chain.id === chainId);
+      return c && c.length && address
+        ? c[0].blockExplorers?.default.url + "/address/" + address
+        : "";
+    },
+    [chainId]
+  );
+
   return (
     <td className="w-60">
       <div className="flex items-center justify-center gap-4">
@@ -88,14 +103,22 @@ const Token = ({
         <div className="text-neutral-400 flex flex-col">
           {erc20 && (
             <div>
-              <a className="link decoration-dotted underline-offset-4 text-xl">
+              <a
+                href={getExplorer(erc20.tokenAddress)}
+                target="_blank"
+                className="link decoration-dotted underline-offset-4 text-xl"
+              >
                 {erc20.symbol}
               </a>
             </div>
           )}
           {erc721 && (
             <div>
-              <a className="link decoration-dotted underline-offset-4 text-xl">
+              <a
+                href={getExplorer(erc721.tokenAddress)}
+                target="_blank"
+                className="link decoration-dotted underline-offset-4 text-xl"
+              >
                 {erc721.symbol}
               </a>
             </div>
