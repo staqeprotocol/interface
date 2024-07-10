@@ -5,12 +5,16 @@ import { useChainId } from "wagmi";
 import {
   staqeProtocolAbi as abi,
   staqeProtocolAddress,
+  useReadStaqeProtocolGetPool,
   useReadStaqeProtocolGetTotalPools,
 } from "@/src/generated";
 import {
   IPoolData,
   IPoolDetails,
   IPoolExtendedDetails,
+  IPoolResult,
+  IPools,
+  IPoolWagmi,
 } from "@/src/interfaces";
 
 import PoolData from "../contexts/PoolData";
@@ -28,6 +32,29 @@ export const usePoolData = (): IPoolData => {
     }
   );
 };
+
+export function usePool(
+  id: string,
+  chain: number,
+  account: `0x${string}`
+): IPoolResult {
+  const args = useMemo(
+    () => (id ? ([account, BigInt(id)] as const) : undefined),
+    [id, account]
+  );
+
+  const { data: dataPool, refetch }: IPoolWagmi = useReadStaqeProtocolGetPool({
+    chainId: (chain ? chain : undefined) as any,
+    args,
+  });
+
+  const pools = useMemo<IPools>(
+    () => (dataPool ? [{ id, account, ...dataPool }] : undefined),
+    [id, account, dataPool]
+  );
+
+  return { pool: pools?.[0], pools, refetch };
+}
 
 export function usePools(
   page: number = 1,
