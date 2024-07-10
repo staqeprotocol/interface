@@ -17,15 +17,15 @@ import {
   Polygon,
   PolygonBadge,
 } from "cryptocons";
-import Link from "next/link";
 import { GiFoundryBucket } from "react-icons/gi";
+import { PiPlanetLight } from "react-icons/pi";
 
 const PoolsPage = () => {
   const account = useAccount();
   const { chains, switchChain }: any = useSwitchChain();
   const chainId = useChainId();
 
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState<number>();
   const [size, setSize] = useState(2);
   const [user, setUser] = useState<`0x${string}`>(ZERO_ADDRESS);
 
@@ -101,7 +101,7 @@ const PoolsPage = () => {
     }
   };
 
-  const { pools, hasPrev, hasNext } = usePools(page, size, user);
+  const { pools, hasPrev, hasNext } = usePools(page || 1, size, user);
 
   return (
     <section className="custom-screen">
@@ -144,22 +144,20 @@ const PoolsPage = () => {
         <div className="mt-2">
           <div className="grid grid-cols-2 gap-2">
             {pools &&
-              pools.map((pool, i) =>
-                /^ipfs/.test(pool.tokenURI) ? (
-                  <Card
-                    pool={pool}
-                    chain={account.chainId || chainId}
-                    key={pool.id}
-                  />
-                ) : undefined
-              )}
+              pools.map((pool, i) => (
+                <Card
+                  pool={pool}
+                  chain={account.chainId || chainId}
+                  key={pool.id}
+                />
+              ))}
           </div>
         </div>
         {pools && pools.length > 0 ? (
           <div className="w-full mt-4 text-center">
             <div className="join">
-              <Link
-                href={`/pools?page=${page - 1}&size=${size}`}
+              <a
+                href={`/pools?page=${(page || 1) - 1}&size=${size}`}
                 className={
                   hasPrev
                     ? "join-item btn"
@@ -169,12 +167,12 @@ const PoolsPage = () => {
                 tabIndex={hasPrev ? undefined : -1}
               >
                 «
-              </Link>
+              </a>
               <button className="join-item btn pointer-events-none">
                 Page {page}
               </button>
-              <Link
-                href={`/pools?page=${page + 1}&size=${size}`}
+              <a
+                href={`/pools?page=${(page || 1) + 1}&size=${size}`}
                 className={
                   hasNext
                     ? "join-item btn"
@@ -184,19 +182,28 @@ const PoolsPage = () => {
                 tabIndex={hasNext ? undefined : -1}
               >
                 »
-              </Link>
+              </a>
             </div>
           </div>
         ) : (
-          <div className="timeline-end md:text-end mb-10 w-full">
-            <a
-              href="/launch"
-              className="link text-xl underline underline-offset-8 decoration-dotted text-gray-500 hover:text-white"
-            >
-              <div className="rounded-2xl bg-neutral-800/40 mx-auto py-20 text-center w-full hover:bg-neutral-900/40">
-                Launch First Pool
+          <div>
+            <div className="timeline-end md:text-end mb-10 w-full">
+              <div className="my-10 flex flex-col gap-4 justify-center items-center">
+                <div className="text-6xl animate-spin">
+                  <PiPlanetLight />
+                </div>
               </div>
-            </a>
+              {page && page === 1 && (
+                <a
+                  href="/launch"
+                  className="link text-xl underline underline-offset-8 decoration-dotted text-gray-500 hover:text-white"
+                >
+                  <div className="rounded-2xl bg-neutral-800/40 mx-auto py-20 text-center w-full hover:bg-neutral-900/40">
+                    Launch First Pool
+                  </div>
+                </a>
+              )}
+            </div>
           </div>
         )}
       </GradientWrapper>
