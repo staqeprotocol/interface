@@ -80,6 +80,8 @@ export function usePools(
   );
 
   useEffect(() => {
+    let isMounted = true;
+
     if (!total) return;
 
     const fetchPools = async () => {
@@ -126,12 +128,18 @@ export function usePools(
         attempts += size;
       }
 
-      setAllValidPools(validPools);
-      const start = (page - 1) * size;
-      setPools(validPools.slice(start, start + size));
+      if (isMounted) {
+        setAllValidPools(validPools);
+        const start = (page - 1) * size;
+        setPools(validPools.slice(start, start + size));
+      }
     };
 
     fetchPools();
+
+    return () => {
+      isMounted = false;
+    };
   }, [total, page, size, account, address]);
 
   const hasNext = useMemo(() => {

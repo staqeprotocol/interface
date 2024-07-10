@@ -101,7 +101,7 @@ const Stake = ({
           />
         </div>
       )}
-      <div className="flex flex-col gap-2 ml-2">
+      <div className="lg:flex flex-col gap-2 ml-2 hidden">
         {hasERC20 && (
           <div className={`${hasERC721 ? "text-xs" : "text-l"}`}>{STK}</div>
         )}
@@ -205,7 +205,7 @@ const Reward = ({
           </div>
         </div>
       )}
-      <div className="flex flex-col gap-2 ml-2">
+      <div className="lg:flex flex-col gap-2 ml-2 hidden">
         <div className="text-l">{RWD}</div>
       </div>
     </div>
