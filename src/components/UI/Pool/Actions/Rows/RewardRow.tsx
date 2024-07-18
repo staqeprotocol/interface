@@ -154,7 +154,7 @@ const Amount = ({
               ? `2xl`
               : `3xl`
             : `4xl`
-          : `5xl`
+          : `4xl`
         : `5xl`
       : `5xl`;
 

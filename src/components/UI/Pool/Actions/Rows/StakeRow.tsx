@@ -207,9 +207,9 @@ const Amount = ({
               ? `2xl`
               : `3xl`
             : `4xl`
-          : `5xl`
-        : `6xl`
-      : `7xl`;
+          : `4xl`
+        : `5xl`
+      : `5xl`;
 
   return (
     <td className="relative overflow-hidden">
