@@ -35,11 +35,18 @@ export function useDashboard(account: `0x${string}`): IDashboard | undefined {
   const { data: totalPools = 0n } = useReadStaqeProtocolGetTotalPools();
   const [totalPoolsProcessed, setTotalPoolsProcessed] = useState(0n);
 
-  const perPage = 1;
+  const perPage = 10;
 
   const [page, setPage] = useState(1);
-  const total = useMemo(() => totalPools / BigInt(perPage), [totalPools]);
-  const { pools: getPools } = usePools(page, perPage, account);
+  const totalPages = useMemo(
+    () => (totalPools + BigInt(perPage) - 1n) / BigInt(perPage),
+    [totalPools]
+  );
+  const {
+    pools: getPools,
+    hasPrev,
+    hasNext,
+  } = usePools(page, perPage, account);
   const pools = useMemo(
     () =>
       JSON.stringify(getPools, (_, v) =>
@@ -69,17 +76,23 @@ export function useDashboard(account: `0x${string}`): IDashboard | undefined {
   }, []);
 
   useEffect(() => {
-    if (page >= total) return;
-    console.log("Page:", page, "/", total);
+    if (BigInt(page) > totalPages) {
+      setCompleted(true);
+      return;
+    }
+
+    if (getPools && getPools.length === 0) {
+      setPage((prev) => prev + 1); // Move to the next page if current page has no pools
+      return;
+    }
+
     const timer = setTimeout(() => setPage((page) => page + 1), 1000);
     return () => clearTimeout(timer);
-  }, [page, total]);
+  }, [page, totalPages, getPools]);
 
   useEffect(() => {
     if (totalPools > 0n && totalPoolsProcessed < totalPools) {
       setCompleted(false);
-    } else {
-      setCompleted(true);
     }
   }, [totalPools, totalPoolsProcessed]);
 
@@ -96,7 +109,7 @@ export function useDashboard(account: `0x${string}`): IDashboard | undefined {
     });
 
     setTotalPoolsProcessed((prev) => prev + BigInt(getPools.length));
-  }, [pools, account]);
+  }, [pools, hasPrev, hasNext, account]);
 
   return {
     completed,
