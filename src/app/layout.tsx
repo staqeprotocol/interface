@@ -12,9 +12,9 @@ const font = Baumans({
 });
 
 export const metadata: Metadata = {
-  title: "Staqe.App",
-  description: "Staqe.App",
-  applicationName: "Staqe.App",
+  title: "Non-castodial pools for NFT and token staking | Staqe.App",
+  description: "Non-castodial pools for NFT and token staking | Staqe.App",
+  applicationName: "Non-castodial pools for NFT and token staking | Staqe.App",
 };
 
 export const viewport: Viewport = {

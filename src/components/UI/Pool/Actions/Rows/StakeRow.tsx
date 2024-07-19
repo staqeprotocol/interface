@@ -197,16 +197,16 @@ const Amount = ({
     return result;
   }, [stake]);
 
-  const l = amount.erc20.length;
+  const l = (amount?.erc20 || amount?.erc721).length;
   const xl =
     l > 3
       ? l > 5
         ? l > 7
           ? l > 9
             ? l > 11
-              ? `2xl`
-              : `3xl`
-            : `4xl`
+              ? `xl`
+              : `2xl`
+            : `3xl`
           : `4xl`
         : `5xl`
       : `5xl`;

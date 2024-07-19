@@ -124,7 +124,6 @@ export const Stake = () => {
   }, [erc20NeedApprove, erc721NeedApprove]);
 
   useEffect(() => {
-    console.log("args", args);
     if (args) writeContract({ args }, { onSuccess });
   }, [args]);
 
@@ -142,8 +141,6 @@ export const Stake = () => {
       setTimeout(() => refetch(), 100);
     }
   }, [onChain]);
-
-  console.log("err", err);
 
   const modal = (
     tokenAddress: `0x${string}` | undefined,
@@ -337,35 +334,37 @@ export const Stake = () => {
                 </span>
               )}
             </label>
-            <div className="label whitespace-nowrap overflow-hidden text-ellipsis text-center">
-              <span className="label-text-alt text-neutral-600 w-full">
-                {isERC721 ? erc721?.name : erc20?.name}{" "}
-                <button
-                  className="btn btn-xs"
-                  onClick={() => {
-                    const modal: any = document.getElementById("modal");
-                    setMint(
-                      <Mint
-                        address={(isERC721 ? erc721 : erc20)?.tokenAddress}
-                        dark
-                        handle={({ data, status }) => {
-                          console.log("data", data);
-                          console.log("status", status);
-                          if (status === "success") {
-                            refetchErc20();
-                            refetchErc721();
-                            refetch();
-                          }
-                        }}
-                      />
-                    );
-                    modal?.showModal();
-                  }}
-                >
-                  Mint
-                </button>
-              </span>
-            </div>
+            {(isERC721 ? erc721 : erc20) && (
+              <div className="label whitespace-nowrap overflow-hidden text-ellipsis text-center">
+                <span className="label-text-alt text-neutral-600 w-full">
+                  {isERC721 ? erc721?.name : erc20?.name}{" "}
+                  <button
+                    className="btn btn-xs"
+                    onClick={() => {
+                      const modal: any = document.getElementById("modal");
+                      setMint(
+                        <Mint
+                          address={(isERC721 ? erc721 : erc20)?.tokenAddress}
+                          dark
+                          handle={({ data, status }) => {
+                            console.log("data", data);
+                            console.log("status", status);
+                            if (status === "success") {
+                              refetchErc20();
+                              refetchErc721();
+                              refetch();
+                            }
+                          }}
+                        />
+                      );
+                      modal?.showModal();
+                    }}
+                  >
+                    Mint
+                  </button>
+                </span>
+              </div>
+            )}
           </label>
         </div>
       )}
