@@ -277,7 +277,7 @@ function Card({ pool, chain }: { pool: IPoolExtendedDetails; chain?: number }) {
                 href={`/pool?id=${pool.id}${chain ? `&chain=${chain}` : ``}`}
                 className="link decoration-dotted underline-offset-4"
               >
-                {metadata?.name}
+                {metadata?.name || `Pool #${pool.id}`}
               </Link>
             </div>
           </div>

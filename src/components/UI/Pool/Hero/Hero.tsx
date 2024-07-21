@@ -152,7 +152,9 @@ export const Hero = () => {
         </div>
         <div className="w-auto px-3 my-auto">
           <div className="">
-            <div className="text-3xl text-white">{metadata?.name}</div>
+            <div className="text-3xl text-white">
+              {metadata?.name || `Pool #${pool?.id}`}
+            </div>
             <div className="mt-1">{pool && `Launched ${launchBlock}`}</div>
           </div>
         </div>
