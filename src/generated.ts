@@ -67,6 +67,20 @@ export const erc20Abi = [
   },
   {
     type: "function",
+    inputs: [],
+    name: "maxSupply",
+    outputs: [{ name: "", internalType: "uint256", type: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
+    inputs: [],
+    name: "tokenPrice",
+    outputs: [{ name: "", internalType: "uint256", type: "uint256" }],
+    stateMutability: "view",
+  },
+  {
+    type: "function",
     inputs: [
       { name: "to", internalType: "address", type: "address" },
       { name: "value", internalType: "uint256", type: "uint256" },

@@ -63,33 +63,26 @@ export function useErc20(
   }, [address, account, spender]);
 
   const { data, refetch }: any = useReadContracts({
-    allowFailure: false,
+    allowFailure: true,
     contracts,
   });
 
   useEffect(() => {
     if (!data) return;
-    const [
-      name,
-      symbol,
-      decimals,
-      balance,
-      allowance,
-      tokenPrice = 0n,
-      maxSupply = 0n,
-    ] = data;
+    const [name, symbol, decimals, balance, allowance, tokenPrice, maxSupply] =
+      data ?? [];
     const tokenAddress = address ?? ZERO_ADDRESS;
     const isApproved = false;
     setToken({
       tokenAddress,
-      name,
-      symbol,
-      decimals,
-      balance,
+      name: name.result,
+      symbol: symbol.result,
+      decimals: decimals.result,
+      balance: balance.result,
       isApproved,
-      allowance,
-      tokenPrice,
-      maxSupply,
+      allowance: allowance.result,
+      tokenPrice: tokenPrice.result,
+      maxSupply: maxSupply.result,
     });
   }, [data]);
 
@@ -139,33 +132,32 @@ export function useErc721(
       },
       {
         address,
-        abi: erc20ToqenAbi,
+        abi: erc721ToqenAbi,
         functionName: "maxSupply",
       },
     ];
   }, [address, account, spender]);
 
   const { data, refetch }: any = useReadContracts({
-    allowFailure: false,
+    allowFailure: true,
     contracts,
   });
 
   useEffect(() => {
     if (!data) return;
-    const [name, symbol, balance, isApproved, tokenPrice = 0n, maxSupply = 0n] =
-      data;
+    const [name, symbol, balance, isApproved, tokenPrice, maxSupply] = data;
     const tokenAddress = address ?? ZERO_ADDRESS;
     const allowance = 0n;
     setToken({
       tokenAddress,
-      name,
-      symbol,
+      name: name.result,
+      symbol: symbol.result,
       decimals: 0n,
-      balance,
-      isApproved,
+      balance: balance.result,
+      isApproved: isApproved.result,
       allowance,
-      tokenPrice,
-      maxSupply,
+      tokenPrice: tokenPrice.result,
+      maxSupply: maxSupply.result,
     });
   }, [data]);
 
