@@ -2,7 +2,7 @@ export const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const p = payload[0].payload ?? {};
     const rewardAmount = Number(
-      p.rewardAmount / 10n ** p.rewardToken?.decimals ?? 0n
+      p.rewardAmount / 10n ** p.rewardToken?.decimals
     ).toLocaleString("en-US");
     const rewardBlock = (p.rewardBlock ?? "").toString();
     const symbol = p.rewardToken?.symbol ?? "";
