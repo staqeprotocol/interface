@@ -38,8 +38,32 @@ const bitTorrentDonau = defineChain({
   },
 });
 
+const taikoHekla = /*#__PURE__*/ defineChain({
+  id: 167_009,
+  name: "Taiko Hekla L2",
+  nativeCurrency: { name: "Ether", symbol: "ETH", decimals: 18 },
+  rpcUrls: {
+    default: {
+      http: ["https://rpc.hekla.taiko.xyz"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "Taikoscan",
+      url: "https://hekla.taikoscan.network",
+    },
+  },
+  contracts: {
+    multicall3: {
+      address: "0xcA11bde05977b3631167028862bE2a173976CA11",
+    },
+  },
+  testnet: true,
+});
+
 export const config = createConfig({
   chains: [
+    taikoHekla,
     scrollSepolia,
     polygonAmoy,
     avalancheFuji,
@@ -61,6 +85,7 @@ export const config = createConfig({
     [bscTestnet.id]: http(),
     [polygonAmoy.id]: http(),
     [avalancheFuji.id]: http(),
+    [taikoHekla.id]: http(),
   },
 });
 

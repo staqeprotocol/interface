@@ -7,6 +7,7 @@ import { NavbarContext } from "@/src/app/providers";
 import GradientWrapper from "@/src/components/GradientWrapper";
 import Bittorrent from "@/src/components/Icons/Bittorrent";
 import Scroll from "@/src/components/Icons/Scroll";
+import Taiko from "@/src/components/Icons/Taiko";
 import Card from "@/src/components/UI/Pools/Card";
 import { ZERO_ADDRESS } from "@/src/constants";
 import { usePools } from "@/src/hooks/usePools";
@@ -62,6 +63,12 @@ const PoolsPage = () => {
         return (
           <div className="w-30 pt-1">
             <PolygonBadge />
+          </div>
+        );
+      case 167009:
+        return (
+          <div className="w-30">
+            <Taiko />
           </div>
         );
       case 43113:

@@ -75,14 +75,14 @@ export function useErc20(
     const isApproved = false;
     setToken({
       tokenAddress,
-      name: name.result,
-      symbol: symbol.result,
-      decimals: decimals.result,
-      balance: balance.result,
+      name: name?.result,
+      symbol: symbol?.result,
+      decimals: decimals?.result,
+      balance: balance?.result,
       isApproved,
-      allowance: allowance.result,
-      tokenPrice: tokenPrice.result,
-      maxSupply: maxSupply.result,
+      allowance: allowance?.result,
+      tokenPrice: tokenPrice?.result,
+      maxSupply: maxSupply?.result,
     });
   }, [data]);
 
